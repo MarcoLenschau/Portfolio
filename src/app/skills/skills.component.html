@@ -1,9 +1,13 @@
 <h1>My Skills</h1>
 
 <div>
-    <div>
-        <img *ngFor="let skill of skillImages" src="./assets/img/skills/{{skill}}.svg" alt="{{skill}}">
+    <div class="skill-list">
+        <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
+            <img src="./assets/img/skills/{{skill}}.svg" alt="{{skill}}">
+            <span>{{skill}}</span>
+        </div>
     </div>
+
     <div>
         <span>I am currently learning</span>
         <div>
