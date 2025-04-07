@@ -8,19 +8,19 @@ import { CommonModule } from '@angular/common';
 })
 export class SkillsComponent {
   skillImages = [
-    "angular",
-    "typescript",
-    "javascript",
-    "html",
-    "css",
-    "restapi",
-    "firebase",
-    "git",
-    "material-design",
-    "scrum"
+    "Angular",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Rest-Api",
+    "Firebase",
+    "GIT",
+    "Material Design",
+    "Scrum"
   ]
   learningSkills = [
-    "react",
-    "vue"
+    "React",
+    "Vue Js"
   ]
 }
