@@ -1,0 +1,9 @@
+@import "../styles/flexbox.scss";
+@import "../../styles.scss";
+
+button {
+    width: 75px;
+    height: 45px;
+    border-radius: 24px;
+    border: $ligh_blue 2px solid;
+}
