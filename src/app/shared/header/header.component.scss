@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $ligh_blue;
+    >section {
+        display: flex;
+        gap: 12px;
+    }
+}
