@@ -8,8 +8,11 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-  @Input() name = ""; 
-  @Input() info = [""];  
-  @Input() technology = [""]; 
-  @Input() screenshot = "";   
+   @Input() project = {
+    name: '',
+    info: [''],
+    info_headline: [''],
+    technology: [''],
+    screenshot: ''
+  }
 }

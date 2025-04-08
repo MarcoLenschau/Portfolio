@@ -18,6 +18,12 @@
     justify-content: center;
 }
 
+.d_flex_s_a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .d_flex_column {
     display: flex;
     flex-direction: column;
@@ -26,6 +32,11 @@
 .d_flex_end {
     display: flex;
     justify-content: flex-end;
+}
+
+.d_flex_start {
+    display: flex;
+    align-items: flex-start;
 }
 
 .g_6 {
