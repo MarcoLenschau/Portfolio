@@ -1,0 +1,22 @@
+@import "../styles/flexbox.scss";
+@import "../../styles.scss";
+
+.active{
+    background-color: $dark_blue;
+    padding: 16px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+app-project {
+    background-color: $dark_blue;
+    padding: 16px;
+    margin: 0px -23px;
+}
+
+.project-title {
+    &:hover {
+        cursor: pointer;
+        color: $white;
+    }
+}

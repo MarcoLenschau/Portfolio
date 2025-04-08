@@ -1,19 +1,21 @@
-<h1 class="d_flex_c">My Skills</h1>
-<div class="d_flex_j_c">
-    <div class="skill-list">
-        <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
-            <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
-            <span>{{skill}}</span>
-        </div>
-    </div>
-
-    <div class="d_flex_column">
-        <span>I am currently learning</span>
-        <div class="d_flex">
-            <div *ngFor="let skill of learningSkills" class="d_flex_a_c">
+<div class="background">
+    <h1 class="d_flex_c">My Skills</h1>
+    <div class="d_flex_j_c">
+        <div class="skill-list">
+            <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
                 <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
                 <span>{{skill}}</span>
-            </div> 
+            </div>
+        </div>
+    
+        <div class="d_flex_column">
+            <span>I am currently learning</span>
+            <div class="d_flex">
+                <div *ngFor="let skill of learningSkills" class="d_flex_a_c">
+                    <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+                    <span>{{skill}}</span>
+                </div> 
+            </div>
         </div>
     </div>
 </div>

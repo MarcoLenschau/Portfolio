@@ -1,10 +1,12 @@
-$dark_blue: #124658;
+$dark_grey: #262E34;
+$dark_blue: #2d3840;
 $ligh_blue: #89BCD9;
 $black: #000000;
 $white: #FFFFFF;
 
 * {
     margin: 0;
+    color: $white;
 }
 
 a {
@@ -13,4 +15,8 @@ a {
     &:hover {
         color: $white;
     }
+}
+
+.background {
+    background-color: $dark_grey;
 }

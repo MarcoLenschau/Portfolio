@@ -1,0 +1,13 @@
+@import "../../styles/flexbox.scss";
+@import "../../../styles.scss";
+
+p {
+    width: 350px;
+}
+
+.technology-list {
+    >img {
+        height: 35px;
+        width: 35px;
+    }
+}

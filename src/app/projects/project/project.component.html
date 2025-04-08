@@ -1,1 +1,21 @@
-<p>project works!</p>
+<div class="d_flex">
+    <div class="d_flex_column g_12">
+        <div *ngFor="let i of info" class="d_flex_a_c g_12">
+            <img src="./assets/img/drop.svg" alt="drop">
+            <span>{{i}}</span>
+        </div>
+    </div>
+
+
+    <div class="d_flex_column">
+        <span class="d_flex_j_c">Technologies</span>
+        <div class="d_flex_j_c technology-list">
+            <img *ngFor="let skill of technology" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+        </div>
+       <img class="d_flex_j_c" src="./assets/img/screenshots/{{screenshot}}.png" alt="{{screenshot}}">
+       <div class="d_flex_j_c">
+            <button>Live Test</button>
+            <button>GitHub</button>
+       </div>
+    </div>
+</div>

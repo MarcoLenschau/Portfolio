@@ -1,6 +1,8 @@
 @import "../../../styles.scss";
 
 header {
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
