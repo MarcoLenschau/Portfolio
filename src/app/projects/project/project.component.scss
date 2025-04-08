@@ -11,3 +11,34 @@ p {
         width: 35px;
     }
 }
+
+.screenshot-image {
+    height: 180px;
+    width: 400px;
+    border-radius: 24px;
+}
+
+.live-test {
+    background-color: $ligh_blue;
+    color: $black;
+    border: 0;
+    border-radius: 24px;
+    width: 120px;
+    height: 40px;
+}
+
+.github {
+    background-color: $dark_blue;
+    color: $ligh_blue;
+    border: $ligh_blue 1px solid;
+    border-radius: 24px;
+    width: 120px;
+    height: 40px;
+}
+
+.live-test, .github {
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.25);
+    }
+}

@@ -12,3 +12,9 @@ header {
         gap: 12px;
     }
 }
+a {
+    color: $black; 
+    &:hover {
+        color: $white;
+    }
+}

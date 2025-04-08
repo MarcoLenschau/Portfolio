@@ -10,24 +10,14 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects = [
     {
-      name: 'El Pollo Loco',
+      name: 'El-Pollo-Loco',
       info: [
         'A browser-based 2D jump-and-run game built with HTML5 Canvas.',
         'Control a hero, collect bottles, and defeat enemies.',
         'Set in a colorful cartoon world with classic platformer mechanics.'
       ],
       technology: ['HTML', 'CSS', 'JavaScript'],
-      screenshot: 'el_pollo_loco.png'
-    },
-    {
-      name: 'Pokedex',
-      info: [
-        'An interactive Pokédex app that fetches data from a REST API.',
-        'Browse and view detailed information about various Pokémon.',
-        'Features a clean and modern UI focused on user experience.'
-      ],
-      technology: ['HTML', 'CSS', 'JavaScript', 'Rest-API'],
-      screenshot: 'pokedex.png'
+      screenshot: 'el-pollo-loco.png'
     },
     {
       name: 'Join',
@@ -36,7 +26,7 @@ export class ProjectsComponent {
         'Create, assign, and organize tasks with drag-and-drop functionality.',
         'Perfect for team collaboration and efficient workflow organization.'
       ],
-      technology: ['HTML', 'CSS', 'JavaScript'],
+      technology: ['HTML', 'CSS' ,'JavaScript', 'Firebase'],
       screenshot: 'join.png'
     }
   ];

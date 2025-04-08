@@ -3,9 +3,13 @@
 
 .active{
     background-color: $dark_blue;
+    color: $white !important;
     padding: 16px;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
+    &:hover {
+        cursor: default !important;
+    }
 }
 
 app-project {
@@ -15,6 +19,7 @@ app-project {
 }
 
 .project-title {
+    color: $ligh_blue;
     &:hover {
         cursor: pointer;
         color: $white;
