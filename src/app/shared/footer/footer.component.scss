@@ -1,0 +1,18 @@
+@import "../../styles/flexbox.scss";
+@import "../../../styles.scss";
+
+* {
+    color: $black !important;
+}
+
+
+
+footer {
+    height: 214px;
+    background-color: $ligh_blue;
+}
+
+.logos {
+    height: 30px;
+    width: 30px;
+}
