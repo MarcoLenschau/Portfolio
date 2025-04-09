@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CommonModule } from '@angular/common';
+import { Firestore, collectionData, collection } from '@angular/fire/firestore';
+
+export interface Feedback {
+  owner: string;
+  project: string;
+  text: string;
+  link: string
+}
+
 @Component({
   selector: 'app-feedback-section',
   imports: [CommonModule ,FeedbackComponent],
@@ -8,24 +17,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './feedback-section.component.scss'
 })
 export class FeedbackSectionComponent {
-  feedbacks = [
-    {
-      'owner': 'Marco',
-      'project': 'Join',
-      'text': 'Very good code style',
-      'link': ''
-    },
-    {
-      'owner': 'Marco',
-      'project': 'Join',
-      'text': 'Very good code style',
-      'link': ''
-    },
-    {
-      'owner': 'Marco',
-      'project': 'Join',
-      'text': 'Very good code style',
-      'link': ''
-    }
-  ];
+  feedbacks = [{}];
+  
+  constructor(private firestore: Firestore) {
+    const colRef = collection(this.firestore, 'feedback');
+    collectionData(colRef).subscribe(feedbacks => {
+      this.feedbacks = feedbacks;
+    });  
+  }
 }

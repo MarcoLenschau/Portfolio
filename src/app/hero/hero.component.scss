@@ -1,2 +1,18 @@
 @import "../styles/flexbox.scss";
 @import "../../styles.scss";
+
+.link-container {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+}
+
+.picture-from-drop {
+    height: 600px;
+    width: 600px;
+}
+
+.picture-from-me {
+    position: absolute;
+    left: 120px;
+}
