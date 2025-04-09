@@ -1,5 +1,5 @@
-<header>
-    <app-logo></app-logo>
+<header *ngIf="isScrolled">
+    <app-logo [logoName]="'logo'"></app-logo>
     <section>
         <a href="">Why me</a>
         <a href="">Skills</a>
