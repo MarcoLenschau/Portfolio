@@ -1,6 +1,6 @@
 <div class="d_flex_c d_flex_column background">
     <h2>Need a teamplayer? Here what my colleagues said about me</h2>
     <div class="d_flex g_12">
-        <app-feedback [feedback]="feedback" *ngFor="let feedback of feedbacks, let i = index"></app-feedback>
+        <app-feedback [index]="i" *ngFor="let feedback of firestore.feedbacks, let i = index"></app-feedback>
     </div>
 </div>

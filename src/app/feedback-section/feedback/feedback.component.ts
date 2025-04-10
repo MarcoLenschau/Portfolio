@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FirestoreService } from '../../services/firestore.service';
 
 @Component({
   selector: 'app-feedback',
@@ -7,10 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './feedback.component.scss'
 })
 export class FeedbackComponent {
-  @Input() feedback = {
-    'owner': '',
-    'project': '',
-    'text': '',
-    'link': ''
-  };
+  @Input() index = 0;
+  constructor(public firestore: FirestoreService) {}
 }

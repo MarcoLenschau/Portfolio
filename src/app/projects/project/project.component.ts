@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { FirestoreService } from '../../services/firestore.service';
 
 @Component({
   selector: 'app-project',
@@ -8,11 +9,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-   @Input() project = {
-    name: '',
-    info: [''],
-    info_headline: [''],
-    technology: [''],
-    screenshot: ''
-  }
+  @Input() index = 0;
+
+  constructor(public firestore: FirestoreService) {}
 }
