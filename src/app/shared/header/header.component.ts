@@ -3,17 +3,19 @@ import { LogoComponent } from '../logo/logo.component';
 import { CommonModule } from '@angular/common';
 import { TranslateLanguageService } from '../../services/translate-language.service';
 import { doc } from '@angular/fire/firestore';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, LogoComponent],
+  imports: [CommonModule, LogoComponent, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   @Input() isScrolled = false;
-  languages = ["de", "en"];
-  
+  languages = ["de", "en", "es"];
+  sections = ["Why me", "Skills", "Projects", "Contacts"];
+
   constructor(public translate: TranslateLanguageService) {
     this.showHeader();
   }

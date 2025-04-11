@@ -1,10 +1,7 @@
 <header *ngIf="isScrolled">
     <app-logo [logoName]="'logo'"></app-logo>
     <section>
-        <a href="#whyme">Why me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a *ngFor="let section of sections" href="#{{section}}">{{section | translate }}</a>
     </section>
     <section>
         <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 

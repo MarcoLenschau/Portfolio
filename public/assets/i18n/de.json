@@ -24,10 +24,22 @@
     "FEEDBACK": {
         "TEAMPLAYER": "Brauchen Sie einen Teamplayer? Hier, was meine Kollegen über mich sagen"
     },
+    "Why me": "Warum ich", 
+    "Skills": "Fähigkeiten", 
+    "My Skills": "Meine Fähigkeiten",
+    "Project": "Projekt",
+    "Projects": "Projekte", 
+    "Profile": "Profil",
+    "Contacts": "Kontakt", 
+    "developer": "Entwickler",
+    "FRONTEND DEVELOPER": "FRONTEND-ENTWICKLER",
+    "I am currently learning": "Ich lerne gerade",
+    "Legal notice": "Impressum",
+    "Live Test": "Live-Test",
     "About the project": "Über das Projekt",
     "How I have organised my work process": "Wie ich meinen Arbeitsprozess organisiert habe",
     "What I have learnt": "Was ich gelernt habe",
     "My group work experience": "Meine Erfahrung in der Gruppenarbeit",
     "Join is a Kanban board that can be used to visually organise tasks and track progress.": "Join ist ein Kanban-Board, mit dem Aufgaben visuell organisiert und der Fortschritt verfolgt werden kann.",
-    "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient. ": "War eine starke Unterstützung im Team. Brachte seine eigenen Ideen ein. Die Zusammenarbeit war sehr angenehm und effizient."
+    "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient. ": "Es war eine starke Unterstützung im Team. Brachte seine eigenen Ideen ein. Die Zusammenarbeit war sehr angenehm und effizient."
 }  

@@ -18,25 +18,25 @@
             <div class="d_flex_s_b">
                 <div class="d_flex_column">
                     <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>
-                    <input class="textfield" type="text">                
+                    <input class="textfield" type="text" required>                
                 </div>
                 <div class="d_flex_column">
                     <span class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
-                    <input class="textfield" type="email">  
+                    <input class="textfield" type="email" required>  
                 </div>
             </div>
             <div class="d_flex_column">
                 <span class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
-                <textarea cols="50" rows="6"></textarea> 
+                <textarea cols="50" rows="6" required></textarea> 
             </div>
             <div class="privacy-police">
-                <input type="checkbox">
+                <input type="checkbox" required>
                 <span>{{ 'CONTACT_ME.READ' | translate }} </span>
                 <a class="color-blue" href="">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
                 <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
             </div>
             <div class="d_flex_end">
-                <button>{{ 'CONTACT_ME.SEND' | translate }}</button>
+                <button [class.disable]="!validate" [disabled]="validate">{{ 'CONTACT_ME.SEND' | translate }}</button>
             </div>
         </div>
     </div>    

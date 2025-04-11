@@ -8,4 +8,5 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
+  validate = false;
 }

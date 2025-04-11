@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { FirestoreService } from '../../services/firestore.service';
 import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-project',
   imports: [CommonModule, TranslateModule],
