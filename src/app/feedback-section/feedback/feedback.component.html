@@ -4,7 +4,7 @@
         <h3>Project </h3>
         <h3 class="color-blue">{{firestore.feedbacks[index].project}}</h3>
     </div>
-    <span style="width: 150px;">"{{firestore.feedbacks[index].text}}"</span>
+    <span style="width: 150px;">"{{firestore.feedbacks[index].text | translate}}"</span>
     <a class="color-blue" href="{{firestore.feedbacks[index].link}}">LinkedIn Profile</a>
 </div>
 <img width="400px" height="400px" src="./assets/img/dark-drop.svg" alt="dark-drop">

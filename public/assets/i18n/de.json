@@ -1,0 +1,33 @@
+{
+    "CONTACT_ME": {
+        "HEADLINE": "Kontaktieren Sie mich",
+        "DESCRIPTION": "Ermutige die Leute, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bieten kannst. Beispiel: Zögere nicht, dich mit Jobangeboten oder ähnlichen Möglichkeiten zu melden wie: ...",
+        "SEND": "Senden",
+        "NAME": "Dein Name", 
+        "EMAIL": "Deine Email", 
+        "MESSAGE":"Deine Nachricht",
+        "READ": "Ich habe die",
+        "PRIVACY": "Datenschutzbestimmungen",
+        "ACCEPT": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    },
+    "WHY_ME": {
+        "TEXT": "Ich bin ein Frontend-Entwickler, der sich auf sauberen, effizienten Code und solide Benutzererfahrungen konzentriert. Ich arbeite mich schnell ein, übernehme Verantwortung und liefere zuverlässige, hochwertige Lösungen - unabhängig oder im Team..",
+        "I_AM": "Ich",
+        "TOWN": "wohne in Glückstadt..|", 
+        "TALK": "Lass uns sprechen",
+        "WHY_ME": "Warum ich"
+    },
+    "PROJECT": {
+        "TECHNOLOGIES": "Technologien",
+        "PROJECTS": "Meine Projekte"
+    },
+    "FEEDBACK": {
+        "TEAMPLAYER": "Brauchen Sie einen Teamplayer? Hier, was meine Kollegen über mich sagen"
+    },
+    "About the project": "Über das Projekt",
+    "How I have organised my work process": "Wie ich meinen Arbeitsprozess organisiert habe",
+    "What I have learnt": "Was ich gelernt habe",
+    "My group work experience": "Meine Erfahrung in der Gruppenarbeit",
+    "Join is a Kanban board that can be used to visually organise tasks and track progress.": "Join ist ein Kanban-Board, mit dem Aufgaben visuell organisiert und der Fortschritt verfolgt werden kann.",
+    "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient. ": "War eine starke Unterstützung im Team. Brachte seine eigenen Ideen ein. Die Zusammenarbeit war sehr angenehm und effizient."
+}  

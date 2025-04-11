@@ -1,0 +1,34 @@
+{
+    "CONTACT_ME": {
+        "HEADLINE": "Contact me",
+        "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...",
+        "SEND": "Send",
+        "NAME": "Your name", 
+        "EMAIL": "Your Email", 
+        "MESSAGE":"Your Message",
+        "READ": "I've read the",
+        "PRIVACY": "privacy police",
+        "ACCEPT": "and agree to the processing of my data as outlined."
+    },
+    "WHY_ME": {
+        "TEXT": "I'm a frontend developer focused on clean, efficient code and solid user experiences. I quickly get up to speed, take ownership, and deliver reliable, high-quality solutions – independently or in a team.",
+        "I_AM": "I am",
+        "TOWN": "located in Happytown..|", 
+        "TALK": "Let's talk",
+        "WHY_ME": "Why me"
+    },
+    "PROJECT": {
+        "TECHNOLOGIES": "Technologies",
+        "PROJECTS": "My Projects"
+    },
+    "FEEDBACK": {
+        "TEAMPLAYER": "Need a teamplayer? Here what my colleagues said about me"
+    },
+    "About the project": "About the project",
+    "How I have organised my work process": "How I have organised my work process",
+    "What I have learnt": "What I have learnt",
+    "My group work experience": "My group work experience",
+    "Join is a Kanban board that can be used to visually organise tasks and track progress.": "Join is a Kanban board that can be used to visually organise tasks and track progress.",
+    "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient. ": "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient."
+}
+  

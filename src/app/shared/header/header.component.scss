@@ -18,5 +18,16 @@ a {
     color: $black; 
     &:hover {
         color: $white;
+        cursor: pointer;
+    }
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 4px;
+    border-radius: 12px;
+    &:hover {
+        cursor: default;
+        color: black;
     }
 }

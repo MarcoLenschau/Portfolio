@@ -1,10 +1,9 @@
-<div class="d_flex_j_c g_12 background">
+<div id="contact" class="d_flex_j_c g_12 background">
     <div class="d_flex_c d_flex_column">
         <div class="d_flex_column g_12">
-            <h1 class="d_flex_j_c color-blue">Contact me</h1>
+            <h1 class="d_flex_j_c color-blue">{{ 'CONTACT_ME.HEADLINE' | translate }}</h1>
             <div class="d_flex_s_b">
-                <span class="w-420">Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. 
-                    Example: Feel free to get in touch with job offers or opportunities such as: ...</span>
+                <span class="w-420">{{ 'CONTACT_ME.DESCRIPTION' | translate }}</span>                  
                 <div class="d_flex_column">
                     <div class="d_flex_a_c g_12">
                         <img class="email-phone-images" src="./assets/img/email.svg" alt="email">
@@ -18,26 +17,26 @@
             </div>
             <div class="d_flex_s_b">
                 <div class="d_flex_column">
-                    <span class="color-blue distance">Your name</span>
+                    <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>
                     <input class="textfield" type="text">                
                 </div>
                 <div class="d_flex_column">
-                    <span class="color-blue distance">Your Email</span>
+                    <span class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
                     <input class="textfield" type="email">  
                 </div>
             </div>
             <div class="d_flex_column">
-                <span class="color-blue distance">Your Message</span>
+                <span class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
                 <textarea cols="50" rows="6"></textarea> 
             </div>
             <div class="privacy-police">
                 <input type="checkbox">
-                <span> I've read the </span>
-                <a class="color-blue" href="">privacy police</a>
-                <span> and agree to the processing of my data as outlined.</span> 
+                <span>{{ 'CONTACT_ME.READ' | translate }} </span>
+                <a class="color-blue" href="">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
+                <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
             </div>
             <div class="d_flex_end">
-                <button>Send</button>
+                <button>{{ 'CONTACT_ME.SEND' | translate }}</button>
             </div>
         </div>
     </div>    
