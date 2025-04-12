@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { FirestoreService } from '../../services/firestore.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,7 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-  @Input() index = 0;
-
-  constructor(public firestore: FirestoreService) {}
+  @Input() project = {
+    name: "",
+    info: [""], 
+    info_headline: [""], 
+    technology: [""], 
+    screenshot: ""
+  }
 }

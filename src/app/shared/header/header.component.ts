@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { CommonModule } from '@angular/common';
 import { TranslateLanguageService } from '../../services/translate-language.service';
-import { doc } from '@angular/fire/firestore';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

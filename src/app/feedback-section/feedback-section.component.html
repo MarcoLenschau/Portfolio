@@ -1,6 +1,6 @@
 <div class="d_flex_c d_flex_column background">
-    <h2>{{'FEEDBACK.TEAMPLAYER' | translate}}</h2>
+    <h2 class="headline">{{'FEEDBACK.TEAMPLAYER' | translate}}</h2>
     <div class="d_flex g_12">
-        <app-feedback [index]="i" *ngFor="let feedback of firestore.feedbacks, let i = index"></app-feedback>
+        <app-feedback [feedback]="feedback" *ngFor="let feedback of feedbacks"></app-feedback>
     </div>
 </div>

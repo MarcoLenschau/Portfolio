@@ -1,10 +1,12 @@
-<div class="d_flex_column feedback">
-    <h2>{{firestore.feedbacks[index].owner}}</h2>
-    <div class="d_flex g_12">
-        <h3>{{'Project' | translate }} </h3>
-        <h3 class="color-blue">{{firestore.feedbacks[index].project}}</h3>
+<div class="d_flex">
+    <img class="" width="400px" height="400px" src="./assets/img/dark-drop.svg" alt="dark-drop">
+    <div class="d_flex_column feedback">
+        <h2 class="headline">{{feedback.owner}}</h2>
+        <div class="d_flex g_12">
+            <h3>{{'Project' | translate }} </h3>
+            <h3 class="color-blue">{{feedback.project}}</h3>
+        </div>
+        <span style="width: 150px;">"{{feedback.text | translate}}"</span>
+        <a class="color-blue" href="{{feedback.link}}">LinkedIn {{ 'Profile' | translate }}</a>
     </div>
-    <span style="width: 150px;">"{{firestore.feedbacks[index].text | translate}}"</span>
-    <a class="color-blue" href="{{firestore.feedbacks[index].link}}">LinkedIn {{ 'Profile' | translate }}</a>
 </div>
-<img width="400px" height="400px" src="./assets/img/dark-drop.svg" alt="dark-drop">

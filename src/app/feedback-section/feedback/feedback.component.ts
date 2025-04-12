@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { FirestoreService } from '../../services/firestore.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { Feedback } from '../../interfaces/feedback.interfaces';
 
 @Component({
   selector: 'app-feedback',
@@ -9,6 +9,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './feedback.component.scss'
 })
 export class FeedbackComponent {
-  @Input() index = 0;
-  constructor(public firestore: FirestoreService) {}
+  @Input() feedback: Feedback = {
+    owner: "",
+    project: "",
+    text: "",
+    link: ""
+  };
 }

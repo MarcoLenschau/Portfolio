@@ -1,4 +1,4 @@
-<div id="contact" class="d_flex_j_c g_12 background">
+<form (ngSubmit)="onSubmit()" id="contact" class="d_flex_j_c g_12 background">
     <div class="d_flex_c d_flex_column">
         <div class="d_flex_column g_12">
             <h1 class="d_flex_j_c color-blue">{{ 'CONTACT_ME.HEADLINE' | translate }}</h1>
@@ -18,16 +18,16 @@
             <div class="d_flex_s_b">
                 <div class="d_flex_column">
                     <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>
-                    <input class="textfield" type="text" required>                
+                    <input name="name" [(ngModel)]="contactData.name" class="textfield" type="text" required>                
                 </div>
                 <div class="d_flex_column">
                     <span class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
-                    <input class="textfield" type="email" required>  
+                    <input name="email" [(ngModel)]="contactData.email" class="textfield" type="email" required>  
                 </div>
             </div>
             <div class="d_flex_column">
                 <span class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
-                <textarea cols="50" rows="6" required></textarea> 
+                <textarea name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6" required></textarea> 
             </div>
             <div class="privacy-police">
                 <input type="checkbox" required>
@@ -36,7 +36,7 @@
                 <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
             </div>
             <div class="d_flex_end">
-                <button [class.disable]="!validate" [disabled]="validate">{{ 'CONTACT_ME.SEND' | translate }}</button>
+                <button [class.disable]="" [disabled]="">{{ 'CONTACT_ME.SEND' | translate }}</button>
             </div>
         </div>
     </div>    
@@ -45,4 +45,4 @@
             <img src="./assets/img/arrows/arrow-up.svg" alt="arrow-up">
         </a>
     </div>
-</div>
+</form>

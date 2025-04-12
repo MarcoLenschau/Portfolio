@@ -1,22 +1,22 @@
 <div class="d_flex_s_a g_12">
     <div class="d_flex_column g_12">
-        <div *ngFor="let headline of firestore.projects[index].info_headline, let headlineIndex = index" class="d_flex_column d_flex_start g_12 w_300">
+        <div *ngFor="let headline of project.info_headline, let headlineIndex = index" class="d_flex_column d_flex_start g_12 w_300">
             <div class="d_flex g_12">
                 <img class="drop" src="./assets/img/drop.svg" alt="drop">
                 <h4>{{ headline | translate}}</h4>
             </div>
-            <span style="padding-left: 40px;">{{firestore.projects[index].info[headlineIndex] |  translate}}</span>
+            <span style="padding-left: 40px;">{{project.info[headlineIndex] |  translate}}</span>
         </div>
     </div>
     <div class="d_flex_column g_12">
         <span class="d_flex_j_c">{{'PROJECT.TECHNOLOGIES' | translate}}</span>
         <div class="d_flex_j_c g_12 technology-list">
-            <img *ngFor="let skill of firestore.projects[index].technology" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+            <img *ngFor="let skill of project.technology" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
         </div>
-       <img class="d_flex_j_c screenshot-image" src="./assets/img/screenshots/{{firestore.projects[index].screenshot}}" alt="{{firestore.projects[index].screenshot}}">
+       <img class="d_flex_j_c screenshot-image" src="./assets/img/screenshots/{{project.screenshot}}" alt="{{project.screenshot}}">
        <div class="d_flex_j_c g_12">
-        <a class="d_flex_c live-test" href="https://marco-lenschau.de/{{firestore.projects[index].name.toLowerCase()}}">{{'Live Test' | translate }}</a>   
-        <a class="d_flex_c github" href="https://github.com/SnowCoder404/{{firestore.projects[index].name}}">GitHub</a>   
+        <a class="d_flex_c live-test" href="https://marco-lenschau.de/{{project.name.toLowerCase()}}">{{'Live Test' | translate }}</a>   
+        <a class="d_flex_c github" href="https://github.com/SnowCoder404/{{project.name}}">GitHub</a>   
        </div>
     </div>
 </div>

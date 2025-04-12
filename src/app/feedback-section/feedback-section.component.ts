@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CommonModule } from '@angular/common';
-import { FirestoreService } from '../services/firestore.service';
 import { TranslateModule } from '@ngx-translate/core';
-
 @Component({
   selector: 'app-feedback-section',
   imports: [CommonModule ,FeedbackComponent, TranslateModule],
@@ -11,5 +9,12 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './feedback-section.component.scss'
 })
 export class FeedbackSectionComponent {
-  constructor(public firestore: FirestoreService) {}
+  feedbacks = [
+    {
+      owner: "David",
+      project: "Kochwelt",
+      text: "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient.",
+      link: ""
+    }
+  ];
 }
