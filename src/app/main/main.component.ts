@@ -5,9 +5,10 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { FeedbackSectionComponent } from '../feedback-section/feedback-section.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
+import { HeaderComponent } from '../shared/header/header.component';
 @Component({
   selector: 'app-main',
-  imports: [HeroComponent ,WhyMeComponent, SkillsComponent, ProjectsComponent, FeedbackSectionComponent, ContactMeComponent],
+  imports: [HeroComponent ,WhyMeComponent, SkillsComponent, ProjectsComponent, FeedbackSectionComponent, ContactMeComponent, HeaderComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

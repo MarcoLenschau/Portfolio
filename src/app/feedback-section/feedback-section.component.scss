@@ -4,3 +4,17 @@
 .headline {
     padding-bottom: 62px;
 }
+
+@media(max-width: 800px) {
+    .headline {
+        font-size: 22px;
+        text-align: center;
+    }    
+}
+
+@media(max-width: 800px) {
+    .headline {
+        font-size: 18px;
+        text-align: center;
+    }    
+}

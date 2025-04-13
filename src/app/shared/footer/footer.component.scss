@@ -6,7 +6,6 @@
 }
 
 
-
 footer {
     height: 214px;
     background-color: $ligh_blue;
@@ -15,4 +14,25 @@ footer {
 .logos {
     height: 30px;
     width: 30px;
+}
+
+@media(max-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright {
+        flex-direction: row;
+        gap: 8px;
+        order: 3;
+    }
+    
+    .logo {
+        order: 1;
+    }
+
+    .logo-section {
+        order: 2;
+    }
 }

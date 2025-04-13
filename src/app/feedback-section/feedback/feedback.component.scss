@@ -2,7 +2,11 @@
 @import "../../../styles.scss";
 
 .feedback {
-    position: relative;
-    top: 65px;
-    left: -268px;
+    background-image: url("/assets/img/dark-drop.svg");
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    border-radius: 150px;
+    text-align: center;
+    align-items: center;
 }
