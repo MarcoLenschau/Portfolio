@@ -10,7 +10,7 @@
     
         <div class="d_flex_column">
             <img src="./assets/img/circle.svg">
-            <div class="learning">
+            <div class="d_flex_column g_12 learning">
                 <span>{{'I am currently learning' | translate}}</span>
                 <div class="d_flex">
                     <div *ngFor="let skill of learningSkills" class="d_flex_a_c">
@@ -18,6 +18,7 @@
                         <span>{{skill}}</span>
                     </div> 
                 </div>
+                <span style="padding: 0 20px;">{{'For me, independently learning new technologies and continuously developing my skills is a given – it’s how I stay technically up to date.' | translate}}</span>
             </div>
 
         </div>

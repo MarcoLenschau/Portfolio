@@ -2,11 +2,8 @@
 @import "../../styles.scss";
 
 .skill-list {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 12px;
-    max-width: 380px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     >div {
         >img {
             height: 50px;
@@ -16,8 +13,10 @@
 }
 
 .learning {
-    position: absolute;
-    padding: 96px;
+    position: absolute;  
+    padding: 65px 75px;
+    align-items: center;
+    width: 215px;
 }
 
 .background {

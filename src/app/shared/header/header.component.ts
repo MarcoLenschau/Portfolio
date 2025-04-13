@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { CommonModule } from '@angular/common';
 import { TranslateLanguageService } from '../../services/translate-language.service';
@@ -11,21 +11,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  @Input() isScrolled = false;
   languages = ["de", "en", "es"];
   sections = ["Why me", "Skills", "Projects", "Contacts"];
-
-  constructor(public translate: TranslateLanguageService) {
-    this.showHeader();
-  }
-
-  showHeader() {
-    setInterval(() => {
-      if (!this.isScrolled && window.scrollY > 700) {
-        this.isScrolled = true;
-      } else if (this.isScrolled && window.scrollY < 700) {
-        this.isScrolled = false;
-      }
-    },100);
-  }
+  
+  constructor(public translate: TranslateLanguageService){}
 }

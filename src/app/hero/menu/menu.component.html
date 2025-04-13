@@ -1,0 +1,14 @@
+<div class="d_flex_column d_flex_a_c container" (click)="toogleMenu();">
+    <div>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="menu-items disable">
+        <a href="#{{section.toLowerCase()}}" *ngFor="let section of sections">{{section}}</a>
+        <div class="d_flex g_6">
+            <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 
+            (click)="translate.switchLanguage(lang)">{{lang.toUpperCase()}}</a>
+        </div>
+    </div>
+</div> 

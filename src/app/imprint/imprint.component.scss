@@ -1,0 +1,15 @@
+@import "../styles/flexbox.scss";
+@import "../../styles.scss";
+
+div {
+    background-color: $dark_grey;
+}
+
+.imprint {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 810px;
+    gap: 12px;
+}

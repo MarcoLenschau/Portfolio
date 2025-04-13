@@ -1,6 +1,15 @@
 @import "../styles/flexbox.scss";
 @import "../../styles.scss";
 
+
+#hero {
+    position: absolute;
+    top: 0;
+    height: 720px;
+    width: 100vw;
+    overflow: hidden; 
+}
+
 .link-container {
     position: absolute;
     top: 100px;
@@ -15,4 +24,50 @@
 .picture-from-me {
     position: absolute;
     left: 120px;
+}
+
+
+@media (min-width: 1000px ) {
+    .disable-desktop {
+        display: none !important;
+    }    
+}
+
+@media (max-width: 1000px ) {
+    .disable-mobile {
+        display: none !important;
+    }
+
+    .headline {
+        position: absolute;
+        top: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 92vw;
+    }
+    
+    .main-picture {
+        position: relative;
+        top: 150px;
+    }
+    
+    .logo-section {
+        position: relative;
+        top: 200px;
+    }
+    
+    .picture-from-drop {
+        width: 325px;
+        height: 280px;
+    }
+
+    .logo-section {
+        justify-content: unset !important;
+        gap: 24px !important;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
 }
