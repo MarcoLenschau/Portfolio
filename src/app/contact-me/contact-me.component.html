@@ -1,8 +1,8 @@
-<form (ngSubmit)="onSubmit()" id="contacts" class="d_flex_j_c g_12 background">
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" id="contacts" class="d_flex_j_c g_12 background">
     <div class="d_flex_c d_flex_column">
-        <div class="d_flex_column g_12">
+        <div class="d_flex_column g_12 responsiv-center">
             <h1 class="d_flex_j_c color-blue">{{ 'CONTACT_ME.HEADLINE' | translate }}</h1>
-            <div class="d_flex_s_b">
+            <div class="d_flex_s_b d responsive">
                 <span class="w-420">{{ 'CONTACT_ME.DESCRIPTION' | translate }}</span>                  
                 <div class="d_flex_column">
                     <div class="d_flex_a_c g_12">
@@ -15,28 +15,38 @@
                     </div>
                 </div>
             </div>
-            <div class="d_flex_s_b">
+            <div class="d_flex_s_b responsiv-column">
+                <span class="color-blue headline">Let us work together!</span>
                 <div class="d_flex_column">
                     <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>
-                    <input name="name" [(ngModel)]="contactData.name" class="textfield" type="text" required>                
+                    <input #name="ngModel" name="name" [(ngModel)]="contactData.name" class="textfield" type="text" required>
+                    @if (!name.valid && name.touched && !name.disabled) {
+                        <span class="error-message">Please enter your name</span>
+                    }                
                 </div>
                 <div class="d_flex_column">
                     <span class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
-                    <input name="email" [(ngModel)]="contactData.email" class="textfield" type="email" required>  
+                    <input #email="ngModel" name="email" [(ngModel)]="contactData.email" class="textfield" type="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>  
+                    @if (!email.valid && email.touched && !email.disabled) {
+                        <span class="error-message">Please enter a email</span>
+                    }
                 </div>
             </div>
             <div class="d_flex_column">
                 <span class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
-                <textarea name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6" required></textarea> 
+                <textarea minlength="4" #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6" required></textarea> 
+                @if (!message.valid && message.touched && !message.disabled) {
+                    <span class="error-message">Please enter a message</span>
+                }
             </div>
             <div class="privacy-police">
                 <input type="checkbox" required>
                 <span>{{ 'CONTACT_ME.READ' | translate }} </span>
-                <a class="color-blue" href="">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
+                <a class="color-blue" href="/imprint">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
                 <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
             </div>
             <div class="d_flex_end">
-                <button [class.disable]="" [disabled]="">{{ 'CONTACT_ME.SEND' | translate }}</button>
+                <button (click)="onSubmit(contactForm);">{{ 'CONTACT_ME.SEND' | translate }}</button>
             </div>
         </div>
     </div>    

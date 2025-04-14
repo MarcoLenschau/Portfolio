@@ -2,7 +2,7 @@
 @import "../../styles.scss";
 
 .distance {
-    padding: 45px;
+    padding: 50px 0;
 }
 
 #skills {
@@ -40,6 +40,19 @@
     font-weight: normal;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 114px;
+    height: 45px;
+    border-radius: 24px;
+    border: $ligh_blue 2px solid;
+    color: $ligh_blue;
+    background-color: $dark_blue;
+}
+
 .font_s_22 {
     font-size: 22px;
     font-weight: bold;
@@ -53,7 +66,6 @@
 
 @media (max-width: 800px) {
     .skill-list {
-        gap: 6px;
         justify-content: center;
         text-align: center;
         >div {
@@ -71,7 +83,6 @@
     .learning {
         background-image: none;
         flex-direction: row-reverse;
-        padding: 50px 58px;
     }
 
     .disable-mobile {

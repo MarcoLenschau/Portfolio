@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateLanguageService } from '../../services/translate-language.service';
+import { TranslateLanguageService } from '../../../services/translate-language.service';
 
 @Component({
   selector: 'app-menu',

@@ -9,6 +9,11 @@ $white: #FFFFFF;
     color: $white;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
+    
+}
+
+html {
+    scroll-padding-top: 100px;
 }
 
 a {

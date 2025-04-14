@@ -1,0 +1,16 @@
+@import "../../styles/flexbox.scss";
+@import "../../../styles.scss";
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: $dark_grey;
+}
+
+@media (min-width: 600px) {
+    .disable-desktop {
+        display: none;
+    }
+}
