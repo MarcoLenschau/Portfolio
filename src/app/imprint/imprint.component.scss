@@ -1,8 +1,11 @@
 @import "../styles/flexbox.scss";
 @import "../../styles.scss";
 
-div {
+.main-div {
     background-color: $dark_grey;
+    height: 100vh;
+    justify-content: center;
+
 }
 
 .imprint {
@@ -12,6 +15,13 @@ div {
     align-items: center;
     width: 810px;
     gap: 12px;
+}
+
+@media (min-width: 1920px) {
+    .main-div {
+        height: 100vh;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 820px) {

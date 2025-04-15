@@ -1,0 +1,37 @@
+@import "../styles/flexbox.scss";
+@import "../../styles.scss";
+
+div {
+    background-color: $dark_grey;
+    display: flex;
+    justify-content: center;
+    >div {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+}
+
+@media (min-width: 1900px) {
+    div {
+        >div {
+            width: 1900px;
+        }
+    }   
+}
+
+@media (max-width: 500px) {
+    div {
+        >div {
+            width: 320px;
+        }
+    }   
+}
+
+@media (max-width: 400px) {
+    div {
+        >div {
+            width: 280px;
+        }
+    }   
+}

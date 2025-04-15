@@ -1,10 +1,12 @@
-<header>
-    <app-logo [logoName]="'logo'"></app-logo>
-    <section>
-        <a *ngFor="let section of sections" href="#{{section.toLowerCase()}}">{{section | translate }}</a>
-    </section>
-    <section>
-        <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 
-        (click)="translate.switchLanguage(lang)">{{lang.toUpperCase()}}</a>
-    </section>
-</header>
+<div class="header-div">
+    <header>
+        <app-logo [logoName]="'logo'"></app-logo>
+        <section>
+            <a *ngFor="let section of sections" href="#{{section.toLowerCase()}}">{{section | translate }}</a>
+        </section>
+        <section>
+            <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 
+            (click)="translate.switchLanguage(lang)">{{lang.toUpperCase()}}</a>
+        </section>
+    </header>
+</div>
