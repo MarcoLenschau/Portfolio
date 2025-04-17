@@ -52,10 +52,21 @@ p {
     width: 29px;
 }
 
+@media (min-width: 1920px) {
+  .main-div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 801px) {
     .disable-desktop {
         display: none;
     }
+
+    .mobile-section {
+        width: 800px;
+    }    
 }
 
 @media (max-width: 800px) {

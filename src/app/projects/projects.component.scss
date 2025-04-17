@@ -25,3 +25,12 @@ app-project {
         color: $white;
     }
 }
+
+@media (min-width: 1920px) {
+    #projects {
+        >div {
+            display: flex;
+            justify-content: center;
+          }
+    }
+}  

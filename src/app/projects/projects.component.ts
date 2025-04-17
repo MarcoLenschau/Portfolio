@@ -15,8 +15,8 @@ export class ProjectsComponent {
       name: "El-Pollo-Loco",
       info: [
         "A browser-based 2D jump-and-run game built with HTML5 Canvas.",
-        "Control a hero, collect bottles, and defeat enemies.",       
-        "Set in a colorful cartoon world with classic platformer mechanics."
+        "I optimized my development workflow through disciplined Git practices and strict adherence to Clean Code principles.",       
+        "I implemented robust OOP principles in JavaScript through classes and inheritance, optimizing code for maintainability and scalabilit."
       ], 
       info_headline: [ 
         "About the project", 
@@ -29,7 +29,9 @@ export class ProjectsComponent {
     {    
       name: "Join",
       info: [
-        "Join is a Kanban board that can be used to visually organise tasks and track progress."
+        "Join is a Kanban board that can be used to visually organise tasks and track progress.",
+        "I divided my workflow into small, structured steps and documented the progress with Git.",
+        "I was able to demonstrate my teamwork skills in the group work and contribute to the successful realisation of the project through clear communication."
       ], 
       info_headline: [ 
         "About the project", 

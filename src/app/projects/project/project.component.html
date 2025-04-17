@@ -1,23 +1,25 @@
-<div class="d_flex_s_a g_12 mobile-section">
-    <div class="d_flex_column g_12">
-        <div *ngFor="let headline of project.info_headline, let headlineIndex = index" class="d_flex_column d_flex_start g_12 w_300">
-            <div class="d_flex g_12">
-                <img class="drop" src="./assets/img/drop.svg" alt="drop">
-                <h4>{{ headline | translate}}</h4>
+<div class="main-div">
+    <div class="d_flex_s_a g_12 mobile-section">
+        <div class="d_flex_column g_12">
+            <div *ngFor="let headline of project.info_headline, let headlineIndex = index" class="d_flex_column d_flex_start g_12 w_300">
+                <div class="d_flex g_12">
+                    <img class="drop" src="./assets/img/drop.svg" alt="drop">
+                    <h4>{{ headline | translate}}</h4>
+                </div>
+                <span style="padding-left: 40px;">{{project.info[headlineIndex] |  translate}}</span>
             </div>
-            <span style="padding-left: 40px;">{{project.info[headlineIndex] |  translate}}</span>
         </div>
-    </div>
-    <div class="d_flex_column g_12">
-        <span class="d_flex_j_c">{{'PROJECT.TECHNOLOGIES' | translate}}</span>
-        <div class="d_flex_j_c g_12 technology-list">
-            <img class="disable-mobile" *ngFor="let skill of project.technology" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
-            <span class="disable-desktop" *ngFor="let skill of project.technology">{{skill}}</span>
+        <div class="d_flex_column g_12">
+            <span class="d_flex_j_c">{{'PROJECT.TECHNOLOGIES' | translate}}</span>
+            <div class="d_flex_j_c g_12 technology-list">
+                <img class="disable-mobile" *ngFor="let skill of project.technology" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+                <span class="disable-desktop" *ngFor="let skill of project.technology">{{skill}}</span>
+            </div>
+           <img class="d_flex_j_c screenshot-image" src="./assets/img/screenshots/{{project.screenshot}}" alt="{{project.screenshot}}">
+           <div class="d_flex_j_c g_12">
+            <a class="d_flex_c live-test" href="https://{{project.name.toLowerCase()}}.marco-lenschau.de/" target="_blank">{{'Live Test' | translate }}</a>   
+            <a class="d_flex_c github" href="https://github.com/SnowCoder404/{{project.name}}" target="_blank">GitHub</a>   
+           </div>
         </div>
-       <img class="d_flex_j_c screenshot-image" src="./assets/img/screenshots/{{project.screenshot}}" alt="{{project.screenshot}}">
-       <div class="d_flex_j_c g_12">
-        <a class="d_flex_c live-test" href="https://{{project.name.toLowerCase()}}.marco-lenschau.de/" target="_blank">{{'Live Test' | translate }}</a>   
-        <a class="d_flex_c github" href="https://github.com/SnowCoder404/{{project.name}}" target="_blank">GitHub</a>   
-       </div>
     </div>
 </div>

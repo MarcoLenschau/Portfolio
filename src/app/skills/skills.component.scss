@@ -64,13 +64,19 @@
     }
 }
 
+@media (min-width: 350px)  {
+    .skill-list {
+        gap: 12px;
+    }
+}
+
 @media (max-width: 800px) {
     .skill-list {
         justify-content: center;
         text-align: center;
-        gap: 12px;
         >div {
             width: 78px;
+            margin-bottom: 22px;           
         }
     }
 

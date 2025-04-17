@@ -69,6 +69,10 @@
     "If special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be explicitly pointed out at the corresponding location.": "Si las condiciones especiales para usos individuales de este sitio web difieren de los párrafos anteriores, se indicará explícitamente en el lugar correspondiente.",
     "In this case, the special conditions of use will apply.": "En este caso, se aplicarán las condiciones especiales de uso.",
     "Source:": "Fuente:",
-    "Click here for the link": "Haga clic aquí para el enlace"
-  }
-  
+    "Click here for the link": "Haga clic aquí para el enlace",
+    "I optimized my development workflow through disciplined Git practices and strict adherence to Clean Code principles.": "Optimizé mi flujo de trabajo de desarrollo mediante prácticas disciplinadas de Git y una estricta adherencia a los principios de Clean Code.", 
+    "I implemented robust OOP principles in JavaScript through classes and inheritance, optimizing code for maintainability and scalabilit.": "Implementé sólidos principios de programación orientada a objetos en JavaScript mediante clases y herencia, optimizando el código para su mantenibilidad y escalabilidad.",
+    "I was able to demonstrate my teamwork skills in the group work and contribute to the successful realisation of the project through clear communication.": "Pude demostrar mis habilidades de trabajo en equipo en el trabajo grupal y contribuir al éxito del proyecto mediante una comunicación clara.",
+    "I divided my workflow into small, structured steps and documented the progress with Git.": "Dividí mi flujo de trabajo en pasos pequeños y estructurados, y documenté el progreso con Git.",
+    "A browser-based 2D jump-and-run game built with HTML5 Canvas.": "Un juego de plataformas 2D basado en navegador, creado con HTML5 Canvas."
+}  
