@@ -36,6 +36,12 @@ textarea {
     }
 }
 
+.links {
+    &:hover {
+        color: $ligh_blue;
+    }
+}
+
 .email-phone-images {
     height: 35px;
     width: 35px;

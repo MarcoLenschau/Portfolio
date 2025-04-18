@@ -4,7 +4,6 @@
 
 #hero {
     height: 105vh;
-    width: 1920px;
     overflow: hidden; 
     align-items: center;
 }
@@ -14,8 +13,18 @@
 }
 
 .picture-from-drop {
-    height: 600px;
-    width: 600px;
+    background-image: url("/assets/img/drop.svg");
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 450px;
+    &:hover {
+        filter: brightness(1.4);
+        background-image: url("/assets/img/shape.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
 }
 
 .logo-section {
@@ -24,10 +33,22 @@
     height: 100vh;
 }   
 
+@media (max-width: 920px) AND (min-width: 650px) {
+    #hero {
+        gap: 50px;
+    }
+}
+
+@media (min-width: 1020px) AND (min-height: 1200px) {
+    #hero {
+        height: 94vh !important;
+    }
+}
+
 @media (max-height: 650px) {
     .picture-from-drop {
-        height: 300px;
-        width: 300px;
+        height: 350px;
+        width: 380px;
     }
 }
 
@@ -40,14 +61,15 @@
 
 @media (min-width: 920px) {
     #hero {
-        height: 94vh;
+        height: 89vh;
+        width: 1920px;
     }
 }
 
 @media (max-width: 1000px) {
     .picture-from-drop {
-        width: 320px;
-        height: 280px;
+        width: 330px;
+        height: 300px;
     }
 }
 
@@ -55,7 +77,7 @@
     .disable-mobile {
         display: none !important;
     }
-
+    
     .logo-section {
         height: 30vh;
     }
@@ -74,12 +96,19 @@
 
 @media (max-height: 850px) AND (min-width: 1024px){
     #hero {
-        height: 90vh;
+        height: 89vh;
     }
 }
 
 @media (max-height: 650px) {
     #hero {
         height: 86vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .picture-from-drop {
+        width: 235px;
+        height: 210px;
     }
 }
