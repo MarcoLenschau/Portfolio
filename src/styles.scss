@@ -5,18 +5,15 @@ $black: #000000;
 $white: #FFFFFF;
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('/assets/fonts/roboto/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 100 900;
-    font-display: swap;
+    font-family: 'Anta';
+    src: url('/assets/fonts/Anta-Regular.ttf') format('truetype');
 }
 
 * {
     margin: 0;
     color: $white;
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Anta', sans-serif;
     
 }
 
