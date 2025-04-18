@@ -38,6 +38,12 @@
     padding: 32px;
     font-size: 18px;
     font-weight: normal;
+    &:hover {
+        .learning-list {
+            filter: brightness(0.7);
+        }
+        filter: brightness(1.5);
+    }
 }
 
 .button {

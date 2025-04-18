@@ -3,15 +3,14 @@
 
 
 #hero {
-    height: 100vh;
+    height: 105vh;
     width: 1920px;
     overflow: hidden; 
+    align-items: center;
 }
 
 .link-container {
-    position: absolute;
-    top: 80px;
-    right: 24px;
+    margin: 25px;
 }
 
 .picture-from-drop {
@@ -19,58 +18,68 @@
     width: 600px;
 }
 
-@media (min-width: 600px ) {
-    .disable-desktop {
-        display: none !important;
-    }
+.logo-section {
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}   
 
-    .logo-section {
-        justify-content: space-between;
-        height: 80vh;
-        padding: 150px;
-    }    
+@media (max-height: 650px) {
+    .picture-from-drop {
+        height: 300px;
+        width: 300px;
+    }
 }
 
-@media (max-width: 1000px ) {
-    .disable-mobile {
-        display: none !important;
-    }
 
-    .headline {
-        display: flex;
-        justify-content: space-between;
-        width: 92vw;
+@media (max-height: 400px) {
+    #hero {
+        height: 105vh;
     }
+}
 
+@media (min-width: 920px) {
+    #hero {
+        height: 94vh;
+    }
+}
+
+@media (max-width: 1000px) {
     .picture-from-drop {
         width: 320px;
         height: 280px;
     }
+}
 
-    .logo-section {
-        justify-content: unset !important;
-        gap: 24px !important;
+@media (max-width: 920px) {
+    .disable-mobile {
+        display: none !important;
     }
 
+    .logo-section {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 650px) {
     #hero {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
-}
 
-@media (max-width: 1000px) AND (min-width: 600px) {
     .logo-section {
-        padding: 0;
-    }
-    #hero {
-        align-items: center;
-        gap: 80px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
-@media (max-width: 350px) {
-    .background {
-        width: 100vw;
+@media (max-height: 850px) AND (min-width: 1024px){
+    #hero {
+        height: 90vh;
+    }
+}
+
+@media (max-height: 650px) {
+    #hero {
+        height: 86vh;
     }
 }
