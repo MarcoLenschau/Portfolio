@@ -31,7 +31,11 @@
 .picture-from-me {
     pointer-events: none;
     position: absolute;
+    background-image: url("/assets/img/subject.svg");
+    background-size: cover;
+    background-position: center;
     height: 630px;
+    width: 475px;
     top: 32px;
     margin: 0 18px;
     z-index: 1;
@@ -101,15 +105,17 @@
     }
 
     .picture-from-drop {        
-        margin-top: 200px;
-        height: 310px;
-        width: 350px;
+        margin-top: 196px;
+        height: 301px;
+        width: 339px;    
     }
 
     .picture-from-me {
-        height: 400px;
-        top: 70px;
-        margin: 40px;
+        background-image: url("/assets/img/subject_mobile.svg");
+        height: 380px;
+        width: 250px;
+        top: 170px;
+        margin: 0 60px;
     }
 }
 
@@ -124,7 +130,7 @@
     }
 
     .picture-from-me {
-        top: 50px;
+        top: 150px;
     }
 }
 
@@ -147,8 +153,7 @@
     }
 
     .picture-from-me {
-        top: 90px;
-        margin: 35px;
-        height: 350px;
+        top: 140px;
+        margin: 0 45px;        
     }
 }
