@@ -4,7 +4,7 @@
         <div class="skill-list">
             <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
                 <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
-                <span>{{skill}}</span>
+                <span class="disable-mobile">{{skill}}</span>
             </div>
         </div>
     
