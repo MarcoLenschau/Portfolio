@@ -8,8 +8,18 @@
     background-color: $dark_grey;
     border: $ligh_blue 1px solid;
     &:focus {
-        color: white;
+        color: $white;
     }
+}
+
+a {
+    >img {
+        &:hover {
+            background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+            border-radius: 24px;
+        }
+    }
+
 }
 
 textarea {
