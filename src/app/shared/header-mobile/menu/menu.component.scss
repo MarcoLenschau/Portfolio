@@ -31,13 +31,19 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/assets/img/drop.svg");
+    background-image: url("/assets/img/shape.svg");
     background-position: center;
     background-size: cover;
     height: 200px;
     width: 223px;
     justify-content: center;
     gap: 18px;
+    position: absolute;
+    top: 142px;
+    left: -14px;
+    width: 320px;
+    height: 340px;
+    z-index: 2;
 }
 
 @media (max-width: 450) {}

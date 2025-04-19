@@ -17,6 +17,6 @@ export class MenuComponent {
   toogleMenu() {
     document.querySelector(".container")?.classList.toggle("change");
     document.querySelector(".menu-items")?.classList.toggle("disable");
-
+    document.querySelector(".picture-from-me")?.classList.toggle("d_none");
   }
 }

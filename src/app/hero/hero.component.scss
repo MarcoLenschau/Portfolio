@@ -14,14 +14,14 @@
 }
 
 .picture-from-drop {
-    background-image: url("/assets/img/drop.svg");
+    background-image: url("/assets/img/shape.svg");
     background-size: cover;
     background-position: center;
     width: 500px;
     height: 450px;
     &:hover {
         filter: brightness(1.4);
-        background-image: url("/assets/img/shape.svg");
+        background-image: url("/assets/img/drop.svg");
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -105,7 +105,7 @@
     }
 
     .picture-from-drop {        
-        margin-top: 196px;
+        margin-top: 119px;
         height: 301px;
         width: 339px;    
     }
@@ -148,12 +148,14 @@
 
 @media (max-width: 400px) {
     .picture-from-drop {
-        width: 310px;
-        height: 280px;
+        width: 305px;
+        height: 324px;
     }
 
-    .picture-from-me {
-        top: 140px;
-        margin: 0 45px;        
+    .picture-from-me {        
+        top: 127px;
+        margin: 0px 27px;
+        background-repeat: no-repeat;
+        background-size: auto;         
     }
 }
