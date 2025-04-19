@@ -9,8 +9,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 96vw;
     margin: 18px;;
+}
+
+
+@media (max-width: 650px) {
+    .headline {
+        width: 90vw;
+    }
 }
 
 @media (min-width: 920px) {

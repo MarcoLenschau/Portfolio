@@ -10,3 +10,10 @@
     text-align: center;
     align-items: center;
 }
+
+a {
+    text-decoration: underline;
+    &:hover {
+        color: $white;
+    }
+}

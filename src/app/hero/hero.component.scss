@@ -28,6 +28,15 @@
     }
 }
 
+.picture-from-me {
+    pointer-events: none;
+    position: absolute;
+    height: 630px;
+    top: 32px;
+    margin: 0 18px;
+    z-index: 1;
+}
+
 .logo-section {
     align-items: center;
     justify-content: space-around;
