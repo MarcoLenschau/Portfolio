@@ -39,11 +39,16 @@
                     <span class="error-message">Please enter a message</span>
                 }
             </div>
-            <div class="privacy-police">
-                <input type="checkbox" required>
-                <span>{{ 'CONTACT_ME.READ' | translate }} </span>
-                <a class="color-blue" href="/privacy">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
-                <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
+            <div class="d_flex_column privacy-police">
+                <div class="d_flex g_6">
+                    <div (click)="checkOrUncheck()" class="checkbox"></div>
+                    <div>
+                        <span>{{ 'CONTACT_ME.READ' | translate }} </span>
+                        <a class="color-blue" href="/privacy">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
+                        <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
+                    </div>
+                </div>
+                <span id="error" class="error-message error-disable" style="padding: 0 18px;">Your check the privaxy</span>
             </div>
             <div class="d_flex_end">
                 <button (click)="onSubmit(contactForm);">{{ 'CONTACT_ME.SEND' | translate }}</button>

@@ -76,6 +76,18 @@
     }
 }
 
+@media (min-width: 326px) AND (max-width: 349px) {
+    .skill-list {
+        gap: 5px;
+    }
+}
+
+@media (min-width: 320px) AND (max-width: 325px) {
+    .skill-list {
+        gap: 2px;
+    }
+}
+
 @media (max-width: 800px) {
     .skill-list {
         justify-content: center;

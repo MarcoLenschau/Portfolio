@@ -18,7 +18,8 @@ export class SkillsComponent {
     "Firebase",
     "GIT",
     "Material Design",
-    "Scrum"
+    "Scrum",
+    "Linux"
   ]
   learningSkills = [
     "React",

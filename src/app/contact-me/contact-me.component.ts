@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, NgForm } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
+import { doc } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-contact-me',
@@ -33,7 +34,7 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) {
+    if (ngForm.submitted && ngForm.form.valid && this.isCheckboxValid()) {
       console.log(this.contactData)
       console.log(ngForm)
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
@@ -46,6 +47,20 @@ export class ContactMeComponent {
           },
           complete: () => console.info('send post complete'),
         });
+    } else if (!this.isCheckboxValid()) {
+      document.getElementsByClassName("checkbox")[0].classList.add("invalid");
+      document.getElementsByClassName("error-disable")[0].classList.remove("error-disable");
     }
+  }
+
+  isCheckboxValid() {
+    return document.getElementsByClassName("checkbox")[0].classList.contains("checked");
+  }
+
+  checkOrUncheck() {
+    let checkbox = document.getElementsByClassName("checkbox")[0]; 
+    checkbox.classList.toggle("checked");
+    checkbox.classList.remove("invalid");
+    document.getElementById("error")?.classList.add("error-disable");
   }
 }

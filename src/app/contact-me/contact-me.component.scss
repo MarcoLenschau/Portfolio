@@ -33,6 +33,10 @@ textarea {
         color: $ligh_blue;
         background-color: $dark_grey;
         margin: 34px 0;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.25);
+        }
     }
 }
 
@@ -65,6 +69,36 @@ form {
     color: red;
     border-radius: 24px;
     margin: 8px 10px;
+}
+
+.checkbox {
+    background-image: url("/assets/img/checkbox/checkbox_default.svg");
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    &:hover {
+        cursor: pointer;
+        background-image: url("/assets/img/checkbox/checkbox_hover.svg");
+    }
+
+}
+
+.invalid {
+    background-image: url("/assets/img/checkbox/checkbox_error.svg");
+}
+
+.checked {
+    background-image: url("/assets/img/checkbox/checkbox_checked.svg");
+    &:hover {
+        cursor: pointer;
+        background-image: url("/assets/img/checkbox/checkbox_checked.svg");
+    }
+}
+
+.error-disable {
+    display: none;
 }
 
 @media (min-width: 801px) {
@@ -108,3 +142,4 @@ form {
         height: 40px;
     }
 }
+

@@ -4,6 +4,10 @@
 .main-div {
     background-color: $dark_grey;
     justify-content: center;
+    >span {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
 
 }
 
