@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { FormsModule, NgForm } from '@angular/forms'
+import { FormsModule, NgForm, NgModel } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
-import { doc } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-contact-me',
@@ -50,6 +49,9 @@ export class ContactMeComponent {
     } else if (!this.isCheckboxValid()) {
       document.getElementsByClassName("checkbox")[0].classList.add("invalid");
       document.getElementsByClassName("error-disable")[0].classList.remove("error-disable");
+      this.invalidText('email');
+      this.invalidText('name');
+      this.invalidText('message');
     }
   }
 
@@ -62,5 +64,13 @@ export class ContactMeComponent {
     checkbox.classList.toggle("checked");
     checkbox.classList.remove("invalid");
     document.getElementById("error")?.classList.add("error-disable");
+  }
+
+  invalidText(id: string) {
+    let subject = document.getElementById(id) as HTMLTextAreaElement;
+    if (!subject.value || subject.value.trim() === '') {
+      subject.placeholder = "  Your " + id + " is requrired"
+      subject.classList.add("invalid-text");
+    }
   }
 }
