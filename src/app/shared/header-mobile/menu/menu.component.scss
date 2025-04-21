@@ -34,10 +34,8 @@ a {
     background-image: url("/assets/img/shape.svg");
     background-position: center;
     background-size: cover;
-    height: 200px;
-    width: 223px;
     justify-content: center;
-    gap: 18px;
+    gap: 42px;
     position: absolute;
     top: 142px;
     left: -14px;
@@ -45,8 +43,6 @@ a {
     height: 340px;
     z-index: 2;
 }
-
-@media (max-width: 450) {}
 
 .disable {
     display: none;
@@ -60,4 +56,15 @@ a {
         cursor: default;
         color: black;
     }
+}
+
+.menu-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0px 266px;
 }

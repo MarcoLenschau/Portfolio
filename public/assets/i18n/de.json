@@ -1,7 +1,7 @@
 {
     "CONTACT_ME": {
         "HEADLINE": "Kontaktieren Sie mich",
-        "DESCRIPTION": "Ermutige die Leute, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bieten kannst. Beispiel: Zögere nicht, dich mit Jobangeboten oder ähnlichen Möglichkeiten zu melden wie: ...",
+        "DESCRIPTION": "Zögere nicht, dich mit Jobangeboten oder ähnlichen Möglichkeiten zu melden – ob für spannende Projektkooperationen oder eine feste Stelle im Bereich Frontend-Entwicklung. Mit meinem Fokus auf moderne Webtechnologien, sauberem Code und einem Gespür für nutzerzentriertes Design bringe ich frische Ideen und zuverlässige Umsetzung in jedes Projekt ein. Lass uns gemeinsam etwas entwickeln, das wirklich Eindruck macht.",
         "SEND": "Senden",
         "NAME": "Dein Name", 
         "EMAIL": "Deine Email", 
@@ -74,7 +74,6 @@
     "I implemented robust OOP principles in JavaScript through classes and inheritance, optimizing code for maintainability and scalabilit.": "Ich habe robuste objektorientierte Programmierprinzipien in JavaScript durch Klassen und Vererbung implementiert, um den Code wartbar und skalierbar zu gestalten.",
     "I was able to demonstrate my teamwork skills in the group work and contribute to the successful realisation of the project through clear communication.": "Ich konnte in der Gruppenarbeit meine Teamfähigkeit unter Beweis stellen und durch klare Kommunikation zur erfolgreichen Umsetzung des Projekts beitragen.",
     "I divided my workflow into small, structured steps and documented the progress with Git.": "Ich habe meinen Arbeitsablauf in kleine, strukturierte Schritte unterteilt und den Fortschritt mit Git dokumentiert.",
-    "A browser-based 2D jump-and-run game built with HTML5 Canvas.": "Ein browserbasiertes 2D-Jump-'n'-Run-Spiel, entwickelt mit HTML5 Canvas."
-
-  
+    "A browser-based 2D jump-and-run game built with HTML5 Canvas.": "Ein browserbasiertes 2D-Jump-'n'-Run-Spiel, entwickelt mit HTML5 Canvas.",
+    "What I am currently learning": "Was ich derzeit lerne"
 }  
