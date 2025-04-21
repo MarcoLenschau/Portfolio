@@ -1,13 +1,6 @@
 @import "../styles/flexbox.scss";
 @import "../../styles.scss";
 
-
-#hero {
-    height: 105vh;
-    overflow: hidden; 
-    align-items: center;
-}
-
 .link-container {
     height: 84vh;
     margin: 25px;
@@ -32,8 +25,8 @@
 }
 
 .logo-section {
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
     gap: 75px;
     >div {
         a {
@@ -83,12 +76,12 @@
 
     .picture-from-me {
         background-image: url("/assets/img/subject.svg");
-        height: 580px;
+        height: 579px;
         width: 420px;
     }
 
     .logo-section {
-        height: 75vh;
+        height: 80vh;
     }
 }
 
@@ -103,6 +96,9 @@
 
     #hero {
         flex-direction: column;
+        height: 100vh;
+        justify-content: flex-end;
+        gap: 35px;
     }
 
     .picture-from-drop {        
