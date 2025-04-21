@@ -5,7 +5,6 @@
 #hero {
     height: 105vh;
     overflow: hidden; 
-    justify-content: center;
     align-items: center;
 }
 
@@ -20,33 +19,22 @@
     background-position: center;
     width: 300px;
     height: 320px;
-    margin-top: 100px;
-    &:hover {
-        filter: brightness(1.4);
-        background-image: url("/assets/img/drop.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-
-    }
 }
 
 .picture-from-me {
-    pointer-events: none;
-    position: absolute;
     background-image: url("/assets/img/subject.svg");
     background-size: cover;
     background-position: center;
     height: 400px;
     width: 275px;
-    top: 60px;
     margin: 0 12px;
     z-index: 1;
 }
 
 .logo-section {
     align-items: center;
-    justify-content: space-around;
-    height: 100vh;
+    justify-content: center;
+    gap: 75px;
     >div {
         a {
             >img {
@@ -72,21 +60,35 @@
     #hero {
         height: 89vh;
         width: 1920px;
+        align-items: flex-end;
     }
 
     .picture-from-drop {
         background-image: url("/assets/img/drop.svg");        
-        width: 430px;
-        height: 380px;
-        margin-top: 150px;
+        width: 540px;
+        height: 480px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &:hover {
+            filter: brightness(1.4);
+            background-image: url("/assets/img/shape.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            .picture-from-me {
+                filter: brightness(0.7);
+            }
+        }
     }
 
     .picture-from-me {
         background-image: url("/assets/img/subject.svg");
-        bottom: 75px;
-        top: unset;
         height: 580px;
         width: 420px;
+    }
+
+    .logo-section {
+        height: 75vh;
     }
 }
 
@@ -96,7 +98,7 @@
     }
 
     .logo-section {
-        height: 30vh;
+        gap: 20px;
     }
 
     #hero {
@@ -104,124 +106,12 @@
     }
 
     .picture-from-drop {        
-        background-image: url("/assets/img/shape.svg");        
+        background-image: url("/assets/img/shape.svg"); 
+        display: flex;
+        align-items: flex-end;       
     }
 
     .picture-from-me {
         background-image: url("/assets/img/subject_mobile.svg");
-        top: 89px;
     }
 }
-
-@media (max-width: 920px) AND (min-width: 650px) {
-    #hero {
-        gap: 50px;
-    }
-}
-
-@media (max-width: 650px) {
-    #hero {
-        flex-direction: column;
-    }
-
-    .logo-section {
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-height: 601px) {
-    .picture-from-me {
-        bottom: 66px;
-    }
-}
-
-
-@media (max-height: 670px) AND (min-height: 601px) {
-    .picture-from-me {
-        top: 60px;
-    }
-}
-
-@media (max-height: 730px) AND (min-height: 700px) {
-    .picture-from-me {
-        top: 80px;
-    }
-}
-
-@media (max-height: 750px) AND (min-height: 730px) {
-    .picture-from-me {
-        top: 87px;
-    }
-}
-
-@media (max-height: 801px) AND (min-height: 790px) {
-    .picture-from-me {
-        top: 132px;
-    }
-}
-
-@media (max-height: 900px) AND (min-height: 860px) {
-    .picture-from-me {
-        top: 145px;
-    }
-}
-
-
-@media (max-height: 929px) AND (min-height: 900px) {
-    .picture-from-me {
-        top: 152px;
-    }
-}
-
-@media (max-height: 940px) AND (min-height: 930px) {
-    .picture-from-me {
-        top: 160px;
-    }
-}
-
-@media (max-height: 1100px) AND (min-height: 940px) {
-    .picture-from-me {
-        top: 192px;
-    }
-}
-
-@media (max-height: 1200px) AND (min-height: 1100px) {
-    .picture-from-me {
-        top: 252px;
-    }
-}
-
-@media (max-height: 1290px) AND (min-height: 1270px) {
-    .picture-from-me {
-        top: 290px;
-    }
-
-}
-
-@media (max-height: 1367px) AND (min-height: 1290px) {
-    .picture-from-me {
-        bottom: 150px;
-        margin-left: 45px;
-    }
-
-    .picture-from-drop {
-        width: 490px;
-        height: 440px;
-        margin-top: 670px;
-        margin-right: 42px;
-    }
-}
-
-@media (max-height: 1400px) AND (min-height: 1367px) {
-    .picture-from-me {
-        top: 322px;
-    }
-}
-
-@media (min-width: 920px) AND (min-height: 850px) {
-    .picture-from-me {
-        bottom: 95px;
-    }
-}
-
