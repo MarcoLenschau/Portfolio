@@ -1,14 +1,6 @@
 @import "../../../styles/flexbox.scss";
 @import "../../../../styles.scss";
 
-a {
-    color: $black; 
-    &:hover {
-        color: $white;
-        cursor: pointer;
-    }
-}
-
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -25,46 +17,4 @@ a {
   
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-}
-
-.menu-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("/assets/img/shape.svg");
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    gap: 42px;
-    position: absolute;
-    top: 142px;
-    left: -14px;
-    width: 320px;
-    height: 340px;
-    z-index: 2;
-}
-
-.disable {
-    display: none;
-}
-
-.active {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 0px 4px;
-    border-radius: 12px;
-    &:hover {
-        cursor: default;
-        color: black;
-    }
-}
-
-.menu-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    margin: 0px 266px;
 }

@@ -3,6 +3,13 @@
         <app-header-mobile></app-header-mobile>
             <div class="picture-from-drop">
                 <div class="picture-from-me"></div>
+                <div class="menu-items disable">
+                    <a href="#{{section.toLowerCase()}}" *ngFor="let section of sections">{{section | translate}}</a>
+                    <div class="d_flex g_6">
+                        <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 
+                        (click)="translate.switchLanguage(lang)">{{lang.toUpperCase()}}</a>
+                    </div>
+                </div>
             </div>
         
             <div class="d_flex d_flex_column logo-section">
