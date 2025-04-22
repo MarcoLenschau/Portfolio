@@ -123,6 +123,14 @@ form {
     border: 1px red solid;
 }
 
+input, textarea {
+    padding: 4px 12px;
+}
+
+#contacts {
+    justify-content: space-around;
+}
+
 @media (min-width: 801px) {
     .headline {
         display: none;
