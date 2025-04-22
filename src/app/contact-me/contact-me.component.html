@@ -1,4 +1,4 @@
-<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" id="contact" class="d_flex_j_c g_12 background">
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" id="contact" class="d_flex_j_c background">
     <div class="d_flex_c d_flex_column">
         <div class="d_flex_column g_12 responsiv-center">
             <h1 class="d_flex_j_c color-blue">{{ 'CONTACT_ME.HEADLINE' | translate }}</h1>
@@ -18,7 +18,7 @@
             <div class="d_flex_s_b g_12 responsiv-column">
                 <span class="color-blue headline">Let us work together!</span>
                 <div class="d_flex_column">
-                    <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>
+                    <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>         
                     <input [class.invalid-text]="!name.valid && name.touched && !name.disabled" 
                     #name="ngModel" name="name" [(ngModel)]="contactData.name" class="textfield" type="text"
                     (blur)="invalidText('name')" placeholder="  Your name" id="name" required>               
@@ -29,13 +29,14 @@
                     #email="ngModel" name="email" [(ngModel)]="contactData.email" 
                     class="textfield" type="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                     (blur)="invalidText('email')" placeholder="  Your Email" id="email" required>  
+
                 </div>
             </div>
             <div class="d_flex_column">
                 <span class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
                 <textarea [class.invalid-text]="!message.valid && message.touched && !message.disabled" minlength="4" 
                 #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6"
-                (blur)="invalidText('message')" placeholder="  Your message" id="message" required></textarea> 
+                (blur)="invalidText('message')" placeholder="  Your message" id="message" required></textarea>
             </div>
             <div class="d_flex_column privacy-police">
                 <div class="d_flex g_6">
@@ -46,7 +47,7 @@
                         <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
                     </div>
                 </div>
-                <span id="error" class="error-message error-disable" style="padding: 0 18px;">Your check the privaxy</span>
+                <span id="error" class="error-message error-disable" style="padding: 0 18px;">{{ 'Please accept the privacy policy'| translate }}.</span>
             </div>
             <div class="d_flex_end">
                 <button (click)="onSubmit(contactForm);">{{ 'CONTACT_ME.SEND' | translate }}</button>

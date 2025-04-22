@@ -34,8 +34,6 @@ export class ContactMeComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && this.isCheckboxValid()) {
-      console.log(this.contactData)
-      console.log(ngForm)
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -69,8 +67,8 @@ export class ContactMeComponent {
   invalidText(id: string) {
     let subject = document.getElementById(id) as HTMLTextAreaElement;
     if (!subject.value || subject.value.trim() === '') {
-      subject.placeholder = "  Your " + id + " is requrired"
+      subject.placeholder = "  Your " + id + " is requrired";
       subject.classList.add("invalid-text");
-    }
+    } 
   }
 }

@@ -135,9 +135,17 @@ input, textarea {
     .headline {
         display: none;
     }
+
+    #contact {
+        gap: 12px;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
+    
+    .screenshot-image {
+        width: 300px;
+    }
 
     form {
         flex-direction: column;
