@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
@@ -31,6 +32,8 @@ export class ContactMeComponent {
       },
     },
   };
+
+  constructor(private router: Router) {}
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && this.isCheckboxValid()) {
@@ -70,5 +73,14 @@ export class ContactMeComponent {
       subject.placeholder = "  Your " + id + " is requrired";
       subject.classList.add("invalid-text");
     } 
+  }
+
+  switchToPrivacyPolicy() {
+    this.router.navigate(['/privacy']);   
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 }

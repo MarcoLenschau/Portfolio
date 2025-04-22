@@ -43,7 +43,7 @@
                     <div (click)="checkOrUncheck()" class="checkbox"></div>
                     <div>
                         <span>{{ 'CONTACT_ME.READ' | translate }} </span>
-                        <a class="color-blue" href="/privacy">{{ 'CONTACT_ME.PRIVACY' | translate }} </a>
+                        <a class="color-blue" (click)="switchToPrivacyPolicy();">{{ 'CONTACT_ME.PRIVACY' | translate }}</a>
                         <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
                     </div>
                 </div>

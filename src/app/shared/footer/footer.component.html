@@ -1,7 +1,7 @@
 <div class="footer-div">
     <footer class="d_flex_s_a">
         <div class="d_flex_column copyright">
-            <span><a href="/imprint">{{'Legal notice' | translate }}</a></span>
+            <span><a (click)="switchToImprint();">{{'Legal notice' | translate }}</a></span>
             <span>© Marco Lenschau 2025</span>
         </div>
         <app-logo class="logo" [logoName]="'logo'"></app-logo>
