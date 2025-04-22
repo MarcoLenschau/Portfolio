@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   languages = ["de", "en", "es"];
-  sections = ["Why me", "Skills", "Projects", "Contacts"];
+  sections = ["Why me", "Skills", "Projects", "Contact"];
   
   constructor(public translate: TranslateLanguageService){}
 }

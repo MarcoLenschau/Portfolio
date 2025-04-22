@@ -14,8 +14,7 @@ a {
 .logo-section {
     >a {
         &:hover {
-            background-color: $white;
-            border-radius: 24px;
+            filter: brightness(0.8);
         }   
     }
 }
@@ -37,6 +36,17 @@ footer {
 .logos {
     height: 30px;
     width: 30px;
+}
+
+@media (min-width: 900px) {
+    .logo-section {
+        >a {
+            &:hover {
+                border-radius: 12px;
+                background-color: $white;
+            }   
+        }
+    }
 }
 
 @media(max-width: 800px) {

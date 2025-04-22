@@ -22,10 +22,14 @@ export class TranslateLanguageService {
 
   setLanguage() {
     this.currentLang = localStorage.getItem("lang");
-    if (this.currentLang != "") {
+    console.log(this.currentLang)
+    if (this.currentLang != null) {
       this.translate.setDefaultLang(this.currentLang);  
     } else {
       this.translate.setDefaultLang("en");  
+      localStorage.setItem("lang", "en");
+      this.currentLang = localStorage.getItem("lang");
+
     }
   }
 

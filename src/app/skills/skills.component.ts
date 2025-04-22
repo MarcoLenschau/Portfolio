@@ -19,7 +19,8 @@ export class SkillsComponent {
     "GIT",
     "Material Design",
     "Scrum",
-    "Linux"
+    "Linux",
+    "Docker"
   ]
   learningSkills = [
     "React",

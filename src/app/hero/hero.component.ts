@@ -12,8 +12,16 @@ import { TranslateLanguageService } from '../services/translate-language.service
 })
 export class HeroComponent {
   languages = ["de", "en", "es"];
-  sections = ["Why me", "Skills", "Projects", "Contacts"];
+  sections = ["Why me", "Skills", "Projects", "Contact"];
 
 
-  constructor(public translate: TranslateLanguageService) {}
+  constructor(public translate: TranslateLanguageService) {
+
+  }
+
+  toogleMenu() {
+    document.querySelector(".container")?.classList.toggle("change");
+    document.querySelector(".menu-items")?.classList.toggle("disable");
+    document.querySelector(".picture-from-me")?.classList.toggle("d_none");
+  }
 }

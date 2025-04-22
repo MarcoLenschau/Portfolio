@@ -63,6 +63,10 @@ p {
     .disable-desktop {
         display: none;
     }
+    
+    .mobile-section {
+        gap: 145px !important;
+    }
 }
 
 @media (max-width: 800px) {

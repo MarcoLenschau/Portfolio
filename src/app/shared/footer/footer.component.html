@@ -7,13 +7,22 @@
         <app-logo class="logo" [logoName]="'logo'"></app-logo>
         <div class="d_flex g_12 logo-section">
             <a href="https://github.com/SnowCoder404" target="_blank">
-                <img class="logos" src="./assets/img/logos/github.svg" alt="github">
+                <picture>
+                    <source media="(max-width:920px)" srcset="./assets/img/logos/white/github-button-white.svg">
+                    <img class="logos" src="./assets/img/logos/dark/github-button-dark.svg" alt="github">
+                </picture>
             </a>
             <a href="mailto: contact@marco-lenschau.de" target="_blank">
-                <img class="logos" src="./assets/img/logos/email.svg" alt="email">        
+                <picture>
+                    <source media="(max-width:920px)" srcset="./assets/img/logos/white/email-button-white.svg">
+                    <img class="logos" src="./assets/img/logos/dark/email-button-dark.svg" alt="email">
+                </picture>
             </a>
             <a href="https://de.linkedin.com/in/marco-lenschau-271214317?trk=public_post_feed-actor-name" target="_blank">
-                <img class="logos" src="./assets/img/logos/linkedin.svg" alt="linkedin">
+                <picture>
+                    <source media="(max-width:920px)" srcset="./assets/img/logos/white/linkedin-button-white.svg">
+                    <img class="logos" src="./assets/img/logos/dark/linkedin-button-dark.svg" alt="linkedin">
+                </picture>
             </a>
         </div>
     </footer>
