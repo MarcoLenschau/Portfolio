@@ -10,17 +10,27 @@ import translationsES from "../../../public/assets/i18n/es.json";
 
 export class TranslateLanguageService {
 
-  currentLang = "en";
+  currentLang: any;
 
   constructor(public translate: TranslateService) {
     translate.setTranslation('en', translationsEN);
     translate.setTranslation('de', translationsDE);
     translate.setTranslation('es', translationsES);
-    translate.setDefaultLang('en');
+    this.setLanguage();
+  }
+
+
+  setLanguage() {
+    this.currentLang = localStorage.getItem("lang");
+    if (this.currentLang != "") {
+      this.translate.setDefaultLang(this.currentLang);  
+    } else {
+      this.translate.setDefaultLang("en");  
+    }
   }
 
   switchLanguage(lang: string): void {
-    this.translate.use(lang);
-    this.currentLang = lang;
+    localStorage.setItem("lang", lang);
+    this.setLanguage();
   }
 }
