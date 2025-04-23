@@ -135,6 +135,10 @@ input, textarea {
     justify-content: space-around;
 }
 
+h1 {
+    text-align: center;
+}
+
 @media (min-width: 801px) {
     .headline {
         display: none;

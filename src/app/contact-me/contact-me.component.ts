@@ -68,11 +68,20 @@ export class ContactMeComponent {
   }
 
   invalidText(id: string) {
+    let error = document.getElementById(id + "-error") as HTMLTextAreaElement;
     let subject = document.getElementById(id) as HTMLTextAreaElement;
-    if (!subject.value || subject.value.trim() === '') {
+    if (!subject.value || subject.value.trim() === '' || subject.validity.valid === false) {
       subject.placeholder = "  Your " + id + " is requrired";
       subject.classList.add("invalid-text");
-    } 
+      error.classList.remove("distance");
+      error.classList.add("error-message");
+      error.innerHTML = "Your " + id + " is required";
+    } else {
+      subject.classList.remove("invalid-text");
+      error.classList.add("distance");
+      error.classList.remove("error-message");
+      error.innerHTML = "Your " + id;
+    }
   }
 
   switchToPrivacyPolicy() {

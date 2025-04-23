@@ -18,13 +18,13 @@
             <div class="d_flex_s_b g_12 responsiv-column">
                 <span class="color-blue headline">Let us work together!</span>
                 <div class="d_flex_column">
-                    <span class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>         
+                    <span id="name-error" class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>         
                     <input [class.invalid-text]="!name.valid && name.touched && !name.disabled" 
                     #name="ngModel" name="name" [(ngModel)]="contactData.name" class="textfield" type="text"
                     (blur)="invalidText('name')" placeholder="  Your name" id="name" required>               
                 </div>
                 <div class="d_flex_column">
-                    <span class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
+                    <span id="email-error" class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
                     <input [class.invalid-text]="!email.valid && email.touched && !email.disabled" 
                     #email="ngModel" name="email" [(ngModel)]="contactData.email" 
                     class="textfield" type="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="d_flex_column">
-                <span class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
+                <span id="message-error" class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
                 <textarea [class.invalid-text]="!message.valid && message.touched && !message.disabled" minlength="4" 
                 #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6"
                 (blur)="invalidText('message')" placeholder="  Your message" id="message" required></textarea>
