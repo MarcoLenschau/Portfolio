@@ -22,7 +22,6 @@ export class TranslateLanguageService {
 
   setLanguage() {
     this.currentLang = localStorage.getItem("lang");
-    console.log(this.currentLang)
     if (this.currentLang != null) {
       this.translate.setDefaultLang(this.currentLang);  
     } else {
