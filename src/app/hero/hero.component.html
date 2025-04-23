@@ -3,13 +3,7 @@
         <app-header-mobile></app-header-mobile>
             <div class="picture-from-drop">
                 <div class="picture-from-me"></div>
-                <div class="menu-items disable">
-                    <a (click)="toogleMenu();" href="#{{section.toLowerCase().split(' ')[0]}}" *ngFor="let section of sections">{{section | translate}}</a>
-                    <div class="d_flex g_6">
-                        <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 
-                        (click)="translate.switchLanguage(lang); toogleMenu();">{{lang.toUpperCase()}}</a>
-                    </div>
-                </div>
+                <app-menu></app-menu>
             </div>
         
             <div class="d_flex d_flex_column logo-section">
