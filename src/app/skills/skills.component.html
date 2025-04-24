@@ -1,28 +1,30 @@
-<div id="skills" class="background">
-    <h1 class="d_flex_c color-blue">{{'My Skills' | translate}}</h1>
-    <div class="d_flex skills-div" style="justify-content: space-evenly;">
-        <div class="skill-list">
-            <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
-                <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
-                <span class="disable-mobile">{{skill}}</span>
-            </div>
-        </div>
-    
-        <div class="d_flex_column d_flex_a_c font_s_22 distance">
-            <span class="disable-desktop color-blue">{{'What I am currently learning' | translate}}</span>
-            <div class="d_flex_column g_12 learning">
-                <span class="disable-mobile">{{'I am currently learning' | translate}}</span>
-                <div class="d_flex learning-list">
-                    <div *ngFor="let skill of learningSkills" class="d_flex_a_c">
-                        <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
-                        <span>{{skill}}</span>
-                    </div> 
+<div class="d_flex_c background">
+    <div id="skills">
+        <h1 class="d_flex_c color-blue">{{'My Skills' | translate}}</h1>
+        <div class="d_flex skills-div" style="justify-content: space-between; padding: 30px;">
+            <div class="skill-list">
+                <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
+                    <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+                    <span class="disable-mobile">{{skill}}</span>
                 </div>
-                <span style="padding: 0 6px;">{{'For me, independently learning new technologies and continuously developing my skills is a given – it’s how I stay technically up to date.' | translate}}</span>
             </div>
-            <div class="d_flex_a_c disable-desktop">
-                <a class="button" href="#contacts">{{ 'WHY_ME.TALK' | translate }}</a>
+        
+            <div class="d_flex_column d_flex_a_c font_s_22 distance">
+                <span class="disable-desktop color-blue">{{'What I am currently learning' | translate}}</span>
+                <div class="d_flex_column g_12 learning">
+                    <span class="disable-mobile">{{'I am currently learning' | translate}}</span>
+                    <div class="d_flex learning-list">
+                        <div *ngFor="let skill of learningSkills" class="d_flex_a_c">
+                            <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+                            <span>{{skill}}</span>
+                        </div> 
+                    </div>
+                    <span style="padding: 0 6px;">{{'For me, independently learning new technologies and continuously developing my skills is a given – it’s how I stay technically up to date.' | translate}}</span>
+                </div>
+                <div class="d_flex_a_c disable-desktop">
+                    <a class="button" href="#contacts">{{ 'WHY_ME.TALK' | translate }}</a>
+                </div>
             </div>
         </div>
-    </div>
+    </div>    
 </div>

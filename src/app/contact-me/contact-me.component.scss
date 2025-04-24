@@ -42,7 +42,7 @@ textarea {
 }
 
 .privacy-police {
-    padding-top: 21px;
+    padding: 24px;
 }
 
 .d_flex_end {
@@ -81,9 +81,10 @@ textarea {
 }
 
 form {
-    padding: 48px;
     display: flex;
     justify-content: center;
+    width: 1920px;
+    padding: 30px;
 }
 
 .error-message {
@@ -132,7 +133,7 @@ input, textarea {
 }
 
 #contact {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 h1 {

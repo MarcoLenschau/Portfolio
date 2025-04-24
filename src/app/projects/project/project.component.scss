@@ -52,11 +52,9 @@ p {
     width: 29px;
 }
 
-@media (min-width: 1920px) {
-  .main-div {
-    display: flex;
-    justify-content: center;
-  }
+.mobile-section {
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media (min-width: 801px) {

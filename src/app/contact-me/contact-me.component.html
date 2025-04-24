@@ -1,62 +1,64 @@
-<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" id="contact" class="d_flex_j_c background">
-    <div class="d_flex_c d_flex_column">
-        <div class="d_flex_column g_12 responsiv-center">
-            <h1 class="d_flex_j_c color-blue">{{ 'CONTACT_ME.HEADLINE' | translate }}</h1>
-            <div class="d_flex_s_b d responsive">
-                <span class="w-420">{{ 'CONTACT_ME.DESCRIPTION' | translate }}</span>                  
-                <div class="d_flex_column">
-                    <div class="d_flex_a_c g_12">
-                        <img class="email-phone-images" src="./assets/img/email.svg" alt="email">
-                        <a class="links" href="mailto: contact@marco-lenschau.de">E-mail: contact&#64;marco-lenschau.de</a>
-                    </div>
-                    <div class="d_flex_a_c g_12">
-                        <img class="email-phone-images" src="./assets/img/phone.svg" alt="phone">
-                        <a class="links" href="tel: 01776433265">Tel: 0177 643 326 5</a>
-                    </div>
-                </div>
-            </div>
-            <div class="d_flex_s_b g_12 responsiv-column">
-                <span class="color-blue headline">Let us work together!</span>
-                <div class="d_flex_column">
-                    <span id="name-error" class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>         
-                    <input [class.invalid-text]="!name.valid && name.touched && !name.disabled" 
-                    #name="ngModel" name="name" [(ngModel)]="contactData.name" class="textfield" type="text"
-                    (blur)="invalidText('name')" placeholder="  Your name" id="name" required>               
-                </div>
-                <div class="d_flex_column">
-                    <span id="email-error" class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
-                    <input [class.invalid-text]="!email.valid && email.touched && !email.disabled" 
-                    #email="ngModel" name="email" [(ngModel)]="contactData.email" 
-                    class="textfield" type="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                    (blur)="invalidText('email')" placeholder="  Your Email" id="email" required>  
-
-                </div>
-            </div>
-            <div class="d_flex_column">
-                <span id="message-error" class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
-                <textarea [class.invalid-text]="!message.valid && message.touched && !message.disabled" minlength="4" 
-                #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6"
-                (blur)="invalidText('message')" placeholder="  Your message" id="message" required></textarea>
-            </div>
-            <div class="d_flex_column privacy-police">
-                <div class="d_flex g_6">
-                    <div (click)="checkOrUncheck()" class="checkbox"></div>
-                    <div>
-                        <span>{{ 'CONTACT_ME.READ' | translate }} </span>
-                        <a class="color-blue" (click)="switchToPrivacyPolicy();">{{ 'CONTACT_ME.PRIVACY' | translate }}</a>
-                        <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
+<div class="d_flex_c background">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" id="contact" class="d_flex_j_c">
+        <div class="d_flex_c d_flex_column">
+            <div class="d_flex_column g_12 responsiv-center">
+                <h1 class="d_flex_j_c color-blue">{{ 'CONTACT_ME.HEADLINE' | translate }}</h1>
+                <div class="d_flex_s_b d responsive">
+                    <span class="w-420">{{ 'CONTACT_ME.DESCRIPTION' | translate }}</span>                  
+                    <div class="d_flex_column">
+                        <div class="d_flex_a_c g_12">
+                            <img class="email-phone-images" src="./assets/img/email.svg" alt="email">
+                            <a class="links" href="mailto: contact@marco-lenschau.de">E-mail: contact&#64;marco-lenschau.de</a>
+                        </div>
+                        <div class="d_flex_a_c g_12">
+                            <img class="email-phone-images" src="./assets/img/phone.svg" alt="phone">
+                            <a class="links" href="tel: 01776433265">Tel: 0177 643 326 5</a>
+                        </div>
                     </div>
                 </div>
-                <span id="error" class="error-message error-disable" style="padding: 0 18px;">{{ 'Please accept the privacy policy'| translate }}.</span>
+                <div class="d_flex_s_b g_12 responsiv-column">
+                    <span class="color-blue headline">Let us work together!</span>
+                    <div class="d_flex_column">
+                        <span id="name-error" class="color-blue distance">{{ 'CONTACT_ME.NAME' | translate }}</span>         
+                        <input [class.invalid-text]="!name.valid && name.touched && !name.disabled" 
+                        #name="ngModel" name="name" [(ngModel)]="contactData.name" class="textfield" type="text"
+                        (blur)="invalidText('name')" placeholder="  Your name" id="name" required>               
+                    </div>
+                    <div class="d_flex_column">
+                        <span id="email-error" class="color-blue distance">{{ 'CONTACT_ME.EMAIL' | translate }}</span>
+                        <input [class.invalid-text]="!email.valid && email.touched && !email.disabled" 
+                        #email="ngModel" name="email" [(ngModel)]="contactData.email" 
+                        class="textfield" type="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        (blur)="invalidText('email')" placeholder="  Your Email" id="email" required>  
+    
+                    </div>
+                </div>
+                <div class="d_flex_column">
+                    <span id="message-error" class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
+                    <textarea [class.invalid-text]="!message.valid && message.touched && !message.disabled" minlength="4" 
+                    #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6"
+                    (blur)="invalidText('message')" placeholder="  Your message" id="message" required></textarea>
+                </div>
+                <div class="d_flex_column privacy-police">
+                    <div class="d_flex g_6">
+                        <div (click)="checkOrUncheck()" class="checkbox"></div>
+                        <div>
+                            <span>{{ 'CONTACT_ME.READ' | translate }} </span>
+                            <a class="color-blue" (click)="switchToPrivacyPolicy();">{{ 'CONTACT_ME.PRIVACY' | translate }}</a>
+                            <span>{{ 'CONTACT_ME.ACCEPT' | translate }}</span> 
+                        </div>
+                    </div>
+                    <span id="error" class="error-message error-disable" style="padding: 0 18px;">{{ 'Please accept the privacy policy'| translate }}.</span>
+                </div>
+                <div class="d_flex_end">
+                    <button (click)="onSubmit(contactForm);">{{ 'CONTACT_ME.SEND' | translate }}</button>
+                </div>
             </div>
-            <div class="d_flex_end">
-                <button (click)="onSubmit(contactForm);">{{ 'CONTACT_ME.SEND' | translate }}</button>
-            </div>
+        </div>    
+        <div>
+            <a href="#hero">
+                <img src="./assets/img/arrows/arrow-up.svg" alt="arrow-up">
+            </a>
         </div>
-    </div>    
-    <div>
-        <a href="#hero">
-            <img src="./assets/img/arrows/arrow-up.svg" alt="arrow-up">
-        </a>
-    </div>
-</form>
+    </form>
+</div>

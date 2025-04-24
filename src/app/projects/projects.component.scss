@@ -26,11 +26,6 @@ app-project {
     }
 }
 
-@media (min-width: 1920px) {
-    #projects {
-        >div {
-            display: flex;
-            justify-content: center;
-          }
-    }
-}  
+#projects {
+    width: 1920px;
+}
