@@ -9,6 +9,12 @@ h2 {
     padding: 48px;
 }
 
+.projects {
+    width: 98vw;
+    display: flex;
+    gap: 32px;
+}
+
 @media(max-width: 800px) {
     .headline {
         font-size: 22px;
@@ -16,9 +22,8 @@ h2 {
     }    
 }
 
-@media(max-width: 800px) {
-    .headline {
-        font-size: 18px;
-        text-align: center;
-    }    
+@media(max-width: 899px) {
+    .projects {
+        overflow-y: hidden;
+    }  
 }

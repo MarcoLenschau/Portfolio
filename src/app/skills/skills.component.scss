@@ -24,8 +24,7 @@
             height: 50px;
             width: 80px;
             &:hover {
-                height: 70px;
-                width: 80px;
+                height: 75px;
             }
         } 
     }
@@ -61,6 +60,19 @@
 .font_s_22 {
     font-size: 22px;
     font-weight: bold;
+}
+
+@media (min-width: 2000px) {
+    .skills-div {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1999px) {
+    .skills-div {
+        justify-content: center;
+        gap: 48px;
+    }
 }
 
 @media (min-width: 801px) {

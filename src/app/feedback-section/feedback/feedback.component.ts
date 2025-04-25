@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Feedback } from '../../interfaces/feedback.interfaces';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-feedback',
-  imports: [TranslateModule],
+  imports: [TranslateModule, CommonModule],
   templateUrl: './feedback.component.html',
   styleUrl: './feedback.component.scss'
 })

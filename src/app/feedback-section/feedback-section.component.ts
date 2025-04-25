@@ -15,6 +15,18 @@ export class FeedbackSectionComponent {
       project: "Kochwelt",
       text: "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient.",
       link: ""
+    },
+    {
+      owner: "Kai",
+      project: "Kochwelt",
+      text: "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient.",
+      link: "https://de.linkedin.com/in/kai-schulz-53207b1a6?trk=public_post_feed-actor-name"
+    },
+    {
+      owner: "Borna",
+      project: "Join",
+      text: "Marco works extremely quickly and purposefully - you can just tell that he enjoys coding and really enjoys it. His enthusiasm is infectious!",
+      link: ""
     }
   ];
 }
