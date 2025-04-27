@@ -133,7 +133,7 @@ input, textarea {
 }
 
 #contact { 
-    justify-content: space-around;
+    justify-content: center;
 }
 
 h1 {
@@ -143,6 +143,10 @@ h1 {
 .valid-message {
     color: $green;
     
+}
+
+.form-container {
+    padding: 0 145px;
 }
 
 @media (min-width: 801px) {

@@ -32,13 +32,19 @@ a {
 footer {
     width: 1920px;
     height: 214px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .logos {
     height: 30px;
     width: 30px;
+}
+
+@media (min-width: 2000px) {
+    footer {
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 900px) {
