@@ -9,10 +9,18 @@ h2 {
     padding: 48px;
 }
 
-.projects {
+.feedbacks {
     width: 98vw;
     display: flex;
     gap: 32px;
+}
+
+@media (min-width: 2000px) {
+    .feedbacks {
+        width: 1920px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media(max-width: 800px) {
@@ -23,7 +31,7 @@ h2 {
 }
 
 @media(max-width: 899px) {
-    .projects {
+    .feedbacks {
         overflow-y: hidden;
     }  
 }

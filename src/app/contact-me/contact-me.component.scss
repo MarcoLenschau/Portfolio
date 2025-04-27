@@ -129,7 +129,7 @@ form {
 }
 
 input, textarea {
-    padding: 4px 12px;
+    padding: 0px 7px;
 }
 
 #contact { 
@@ -138,6 +138,11 @@ input, textarea {
 
 h1 {
     text-align: center;
+}
+
+.valid-message {
+    color: $green;
+    
 }
 
 @media (min-width: 801px) {
@@ -163,6 +168,7 @@ h1 {
 
     .w-420 {
         width: 300px;
+        padding: 0 10px;
     }
 
     .headline {

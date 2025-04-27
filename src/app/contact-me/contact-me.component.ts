@@ -41,15 +41,24 @@ export class ContactMeComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            document.getElementsByClassName("checkbox")[0].classList.remove("checked");
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            const message = document.getElementById("error") as HTMLTextAreaElement;
+            message.classList.remove("error-disable");
+            message.classList.add("valid-message");
+            message.innerText = "Your message was sent successfully.";
+          }
         });
     } else if (!this.isCheckboxValid()) {
+      const message = document.getElementById("error") as HTMLTextAreaElement;
       document.getElementsByClassName("checkbox")[0].classList.add("invalid");
-      document.getElementsByClassName("error-disable")[0].classList.remove("error-disable");
+      message.classList.remove("error-disable");
+      message.classList.remove("valid-message");
+      message.innerText = "Please accept the privacy policy";
       this.invalidText('email');
       this.invalidText('name');
       this.invalidText('message');
