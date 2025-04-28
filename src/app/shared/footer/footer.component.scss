@@ -41,6 +41,14 @@ footer {
     width: 30px;
 }
 
+@media (min-height: 3500px) {
+    .footer-div {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+}
+
 @media (min-width: 2000px) {
     footer {
         justify-content: space-between;
