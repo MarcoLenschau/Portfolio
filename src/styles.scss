@@ -45,3 +45,9 @@ a {
 .animation {
     animation: fadeIn 3s forwards;
 }
+
+@media (max-width: 600px) {
+    html  {
+        scroll-padding-top: 0px;
+    }
+}
