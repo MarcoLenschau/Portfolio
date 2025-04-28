@@ -4,6 +4,6 @@
         <div class="d_flex g_12">
             <div  class="d_flex_a_c project-title" (click)="sendProjectData(i)" [class.active]="active === i" *ngFor="let project of projects, let i = index">{{i + 1}}. {{project.name}}</div>
         </div>
-        <app-project [project]="projects[active]"></app-project>
+        <app-project class="app-project" [project]="projects[active]"></app-project>
     </div>
 </div>

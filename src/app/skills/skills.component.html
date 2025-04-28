@@ -3,8 +3,8 @@
         <h1 id="skills" class="d_flex_c color-blue">{{'My Skills' | translate}}</h1>
         <div class="d_flex skills-div" style="padding: 30px 0;">
             <div class="skill-list">
-                <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column" >
-                    <img src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
+                <div *ngFor="let skill of skillImages" class="d_flex_c d_flex_column">
+                    <img class="skill-image" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
                     <span class="disable-mobile">{{skill}}</span>
                 </div>
             </div>

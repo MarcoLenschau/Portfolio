@@ -10,12 +10,22 @@ $green: #00FF00;
     src: url('/assets/fonts/Anta-Regular.ttf') format('truetype');
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     color: $white;
     scroll-behavior: smooth;
     font-family: 'Anta', sans-serif;
 }
+
 html  {
     scroll-padding-top: 80px;
 }
@@ -30,4 +40,8 @@ a {
 
 .color-blue {
     color: $ligh_blue;
+}
+
+.animation {
+    animation: fadeIn 3s forwards;
 }

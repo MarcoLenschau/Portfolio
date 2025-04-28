@@ -7,13 +7,13 @@
     justify-content: center;
     width: 100%;
     background-color: $ligh_blue;
-
+    z-index: 1;
 }
 
 header {
     width: 1920px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 30px;
     >section {
@@ -37,6 +37,12 @@ a {
     color: $white;
     &:hover {
         cursor: default;
+    }
+}
+
+@media (min-width: 2000px) {
+    header {
+        justify-content: space-between;
     }
 }
 

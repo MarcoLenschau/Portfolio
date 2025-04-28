@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { AnimationService } from '../services/animation.service';
 @Component({
   selector: 'app-projects',
   imports: [ProjectComponent, CommonModule, TranslateModule],
@@ -43,6 +43,11 @@ export class ProjectsComponent {
     }
   ];
   active = 0;
+
+  constructor(private animation: AnimationService) {
+    const images = document.getElementsByClassName("screenshot-image");
+    this.animation.addAnimationToImages(images);
+  }
 
   sendProjectData(index: number) {
     this.active = index;

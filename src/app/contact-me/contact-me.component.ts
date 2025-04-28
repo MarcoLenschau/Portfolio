@@ -4,7 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-
+import { AnimationService } from '../services/animation.service';
 @Component({
   selector: 'app-contact-me',
   imports: [CommonModule, TranslateModule, FormsModule],
@@ -33,7 +33,10 @@ export class ContactMeComponent {
     },
   };
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private animation: AnimationService) {
+    const images = document.getElementsByClassName("form-container");
+    this.animation.addAnimationToImages(images);
+  }
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && this.isCheckboxValid()) {

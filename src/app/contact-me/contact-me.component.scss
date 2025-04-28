@@ -129,7 +129,11 @@ form {
 }
 
 input, textarea {
-    padding: 0px 7px;
+    padding-left: 17px;
+}
+
+textarea {
+    padding-top: 10px;
 }
 
 #contact { 
@@ -145,8 +149,10 @@ h1 {
     
 }
 
-.form-container {
-    padding: 0 145px;
+@media (min-width: 1000px) {
+    .form-container {
+        padding: 0 55px;
+    }
 }
 
 @media (min-width: 801px) {
@@ -157,6 +163,7 @@ h1 {
     #contact {
         gap: 12px;
     }
+    
 }
 
 @media (max-width: 920px) {
