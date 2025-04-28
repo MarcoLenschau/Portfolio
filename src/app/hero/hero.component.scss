@@ -56,8 +56,8 @@ marquee {
 @media (min-width: 1800px) {
     .picture-from-drop{
         background-image: url("/assets/img/drop.svg");        
-        width: 1130px;
-        height: 1000px;
+        width: 501px;
+        height: 429px;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -74,8 +74,8 @@ marquee {
 
     .picture-from-me {
         background-image: url("/assets/img/subject.svg");
-        height: 1200px;
-        width: 930px;
+        height: 568px;
+        width: 432px;
     }
 
     #hero {
@@ -85,7 +85,7 @@ marquee {
     }
 
     .logo-section {
-        height: 55vh;
+        height: 80vh;
     }
 }
 
