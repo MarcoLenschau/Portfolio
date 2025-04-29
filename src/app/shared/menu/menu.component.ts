@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateLanguageService } from '../../services/translate-language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -13,9 +14,10 @@ export class MenuComponent {
   languages = ["de", "en", "es"];
   sections = ["Why me", "Skills", "Projects", "Contact"];
 
+  constructor(private router: Router, public translate: TranslateLanguageService){}
 
-  constructor(public translate: TranslateLanguageService) {
-
+  switchSite() {    
+    this.router.navigate(['/']); 
   }
 
   toogleMenu() {

@@ -2,7 +2,7 @@
     <header>
         <app-logo [logoName]="'logo'"></app-logo>
         <section>
-            <a *ngFor="let section of sections" (click)="switchSite(section)" href="#{{section.toLowerCase().split(' ')[0]}}">{{section | translate }}</a>
+            <a *ngFor="let section of sections" (click)="switchSite()" href="#{{section.toLowerCase().split(' ')[0]}}">{{section | translate }}</a>
         </section>
         <section>
             <a *ngFor="let lang of languages" id="{{lang.toLowerCase()}}" [class.active]="translate.currentLang === lang" 

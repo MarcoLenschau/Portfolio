@@ -17,7 +17,7 @@ export class HeaderComponent {
   
   constructor(private router: Router, public translate: TranslateLanguageService){}
 
-  switchSite(section: string) {    
-    this.router.navigate(['/#' + section]); 
+  switchSite() {    
+    this.router.navigate(['/']); 
   }
 }
