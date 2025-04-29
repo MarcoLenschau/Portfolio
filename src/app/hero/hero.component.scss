@@ -15,7 +15,7 @@
 }
 
 .picture-from-me {
-    background-image: url("/assets/img/subject.svg");
+    background-image: url("/assets/img/me.png");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -73,7 +73,7 @@ marquee {
     }
 
     .picture-from-me {
-        background-image: url("/assets/img/subject.svg");
+        background-image: url("/assets/img/me.png");
         height: 568px;
         width: 432px;
     }
@@ -130,9 +130,9 @@ marquee {
     }
 
     .picture-from-me {
-        background-image: url("/assets/img/subject.svg");
+        background-image: url("/assets/img/me.png");
         height: 579px;
-        width: 420px;
+        width: 450px;
     }
 
     .logo-section {
@@ -164,7 +164,9 @@ marquee {
     }
 
     .picture-from-me {
-        background-image: url("/assets/img/subject_mobile.svg");
+        background-image: url("/assets/img/me-round.png");
+        height: 400px;
+        width: 380px;
     }
 }
 
