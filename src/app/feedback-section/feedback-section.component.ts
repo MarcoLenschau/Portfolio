@@ -11,12 +11,6 @@ import { TranslateModule } from '@ngx-translate/core';
 export class FeedbackSectionComponent {
   feedbacks = [
     {
-      owner: "David",
-      project: "Kochwelt",
-      text: "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient.",
-      link: ""
-    },
-    {
       owner: "Kai",
       project: "Kochwelt",
       text: "Was a strong support in the team. Contributed her own ideas. The collaboration was really pleasant and efficient.",
