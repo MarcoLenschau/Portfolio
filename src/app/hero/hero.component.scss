@@ -74,8 +74,8 @@ marquee {
 
     .picture-from-me {
         background-image: url("/assets/img/me.png");
-        height: 568px;
-        width: 432px;
+        height: 750px;
+        width: 500px;
     }
 
     #hero {
@@ -165,8 +165,11 @@ marquee {
 
     .picture-from-me {
         background-image: url("/assets/img/me-round.png");
-        height: 400px;
-        width: 380px;
+        height: 584px;
+        width: 300px;
+        position: absolute;
+        bottom: 194px;
+        right: 48px;
     }
 }
 
