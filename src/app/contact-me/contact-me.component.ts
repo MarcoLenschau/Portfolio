@@ -5,6 +5,7 @@ import { FormsModule, NgForm, NgModel } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AnimationService } from '../services/animation.service';
+import { FirefoxDetectionService } from '../services/firefox-detection.service';
 @Component({
   selector: 'app-contact-me',
   imports: [CommonModule, TranslateModule, FormsModule],
@@ -21,6 +22,7 @@ export class ContactMeComponent {
   }
  
   http = inject(HttpClient);
+  public firefoxService = inject(FirefoxDetectionService);
 
   post = {
     endPoint: 'https://marco-lenschau.de/sendMail.php',
