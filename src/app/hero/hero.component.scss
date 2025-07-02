@@ -160,15 +160,17 @@ marquee {
         background-image: url("/assets/img/shape.svg"); 
         display: flex;
         align-items: flex-end;   
-        justify-content: center;    
+        justify-content: center;  
+        width: 266px;
+        height: 286px;  
     }
 
     .picture-from-me {
         background-image: url("/assets/img/me-round.png");
-        height: 584px;
+        height: 454px;
         width: 300px;
         position: relative;
-        top: 25px;
+        top: 35px;
     }
 }
 
