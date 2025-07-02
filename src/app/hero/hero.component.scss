@@ -167,9 +167,8 @@ marquee {
         background-image: url("/assets/img/me-round.png");
         height: 584px;
         width: 300px;
-        position: absolute;
-        bottom: 194px;
-        right: 105px;
+        position: relative;
+        top: 25px;
     }
 }
 
