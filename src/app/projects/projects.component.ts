@@ -11,21 +11,6 @@ import { AnimationService } from '../services/animation.service';
 })
 export class ProjectsComponent {
   projects = [
-     {    
-      name: "Simple-CRM",
-      info: [
-        "Lightweight customer relationship management application built with Angular.",
-        "I optimized my workflow with angular and typescript.",       
-        "I implemented following function: Add and edit users, manage sales tasks and much more."
-      ], 
-      info_headline: [ 
-        "About the project", 
-        "How I have organised my work process",
-        "What I have learnt" 
-      ], 
-      technology: ["Angular", "TypeScript", "Firebase"], 
-      screenshot: "simple-crm.png"
-    },
     {    
       name: "El-Pollo-Loco",
       info: [
