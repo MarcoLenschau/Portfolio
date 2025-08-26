@@ -32,5 +32,5 @@ jobs:
           username: github
           key: ${{ secrets.SECRET_KEY }}
           port: 22
-          source: "/dist/portfolio/browser/*"
+          source: "dist/portfolio/browser/*"
           target: "/var/www/html/portfolio/"
