@@ -34,3 +34,4 @@ jobs:
           port: 22
           source: "dist/portfolio/browser/*"
           target: "/var/www/html/portfolio/"
+          strip_components: 2
