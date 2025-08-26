@@ -27,14 +27,12 @@ jobs:
       - name: 🔨 Build Angular App
         run: ng build --configuration production --base-href="/"
 
-      - name: Set up SSH Key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SECRET_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H marco-lenschau.de >> ~/.ssh/known_hosts
-
-      - name: Deploy via SSH
-        run: |
-          scp -r dist/portfolio/browser/* github@marco-lenschau.de:/var/www/html/portfolio/
-          
+      - name: Copy files via SCP
+        uses: appleboy/scp-action@v1
+        with:
+          host: marco-lenschau.de
+          username: github
+          key: ${{ secrets.SECRET_KEY }}
+          port: 22
+          source: "./dist/portfolio/browser/"
+          target: "/var/www/html/portfolio/"
