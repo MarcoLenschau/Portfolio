@@ -11,6 +11,21 @@ import { AnimationService } from '../services/animation.service';
 })
 export class ProjectsComponent {
   projects = [
+    {
+      name: "DaBubble",
+      info: [
+        "DaBubble is a real-time chat messenger.",
+        "My development process structured i with Git for version control and Github Actions for CI/CD.",
+        "I implemented features for the authentication with password, Google and Github."
+      ],
+      info_headline: [
+        "About the project",
+        "How I have organised my work process",
+        "My group work experience"
+      ],
+      technology: ["Angular", "TypeScript", "Firebase"],
+      screenshot: "dabubble.png"
+    },
     {    
       name: "El-Pollo-Loco",
       info: [
@@ -40,10 +55,10 @@ export class ProjectsComponent {
       ], 
       technology: ["HTML", "CSS", "JavaScript", "Firebase"], 
       screenshot: "join.png"
-    }
+    }  
   ];
   active = 0;
-
+  
   constructor(private animation: AnimationService) {
     const images = document.getElementsByClassName("screenshot-image");
     this.animation.addAnimationToImages(images);
