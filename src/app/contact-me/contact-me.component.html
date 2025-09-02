@@ -33,7 +33,7 @@
     
                     </div>
                 </div>
-                <div [class.no-padding]="firefoxService.firefoxDetected" class="d_flex_column responsive-distance">
+                <div [class.no-padding]="firefoxService.firefoxDetected" class="d_flex_column">
                     <span id="message-error" class="color-blue distance">{{ 'CONTACT_ME.MESSAGE' | translate }}</span>
                     <textarea [class.invalid-text]="!message.valid && message.touched && !message.disabled" minlength="4" 
                     #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6"
