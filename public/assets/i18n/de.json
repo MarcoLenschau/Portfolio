@@ -222,5 +222,8 @@
     "We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.": "Wir können Ihre persönlichen Informationen mit Dienstleistern teilen, um die Nutzung unseres Services zu überwachen und zu analysieren sowie um Sie zu kontaktieren.",
     "Lightweight customer relationship management application built with Angular.": "Leichtgewichtige Kundenbeziehungsmanagement-Anwendung mit Angular gebaut",
     "I optimized my workflow with angular and typescript.": "Ich habe meinen Arbeitsablauf mit Angular und Typescript optimiert.",      
-    "I implemented following function: Add and edit users, manage sales tasks and much more.": "Ich habe folgende Funktion implementiert: Benutzer hinzufügen und bearbeiten, Verkaufsaufgaben verwalten und vieles mehr."
+    "I implemented following function: Add and edit users, manage sales tasks and much more.": "Ich habe folgende Funktion implementiert: Benutzer hinzufügen und bearbeiten, Verkaufsaufgaben verwalten und vieles mehr.",
+    "DaBubble is a real-time chat messenger." : "DaBubble ist ein Echtzeit-Chat-Messenger.",
+    "My development process structured i with Git for version control and Github Actions for CI/CD.": "Mein Entwicklungsprozess ist mit Git für die Versionskontrolle und Github Actions für CI/CD strukturiert.",
+    "I implemented features for the authentication with password, Google and Github." : "Ich habe Funktionen für die Authentifizierung mit Passwort, Google und Github implementiert."
 } 
