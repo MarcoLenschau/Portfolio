@@ -254,5 +254,8 @@
     "Delete Your Personal Data": "Eliminar sus datos personales",
     "Lightweight customer relationship management application built with Angular.": "Aplicación ligera de gestión de relaciones con los clientes construida con Angular.",
     "I optimized my workflow with angular and typescript.": "Optimicé mi flujo de trabajo con angular y typescript.",      
-    "I implemented following function: Add and edit users, manage sales tasks and much more.": "He implementado las siguientes funciones: Añadir y editar usuarios, gestionar tareas de ventas y mucho más."
+    "I implemented following function: Add and edit users, manage sales tasks and much more.": "He implementado las siguientes funciones: Añadir y editar usuarios, gestionar tareas de ventas y mucho más.",
+    "DaBubble is a real-time chat messenger." : "DaBubble es un servicio de mensajería instantánea en tiempo real.",
+    "My development process structured i with Git for version control and Github Actions for CI/CD." : "Mi proceso de desarrollo se estructuró con Git para el control de versiones y Github Actions para CI/CD.",
+    "I implemented features for the authentication with password, Google and Github." : "Implementé funciones para la autenticación con contraseña, Google y Github."
 }  

@@ -9,7 +9,7 @@
                 <span style="padding-left: 40px;">{{project.info[headlineIndex] |  translate}}</span>
             </div>
         </div>
-        <div class="d_flex_column g_12">
+        <div class="d_flex_c d_flex_column g_12">
             <span class="d_flex_j_c">{{'PROJECT.TECHNOLOGIES' | translate}}</span>
             <div class="d_flex_j_c g_12 technology-list">
                 <img class="disable-mobile" *ngFor="let skill of project.technology" src="./assets/img/skills/{{skill.toLowerCase()}}.svg" alt="{{skill}}">
@@ -17,8 +17,9 @@
             </div>
            <img class="d_flex_j_c screenshot-image" src="./assets/img/screenshots/{{project.screenshot}}" alt="{{project.screenshot}}">
            <div class="d_flex_j_c g_12">
+            <a class="d_flex_c github" href="https://gitlab.com/MarcoLenschau/{{project.name}}" target="_blank">GitLab</a> 
             <a class="d_flex_c live-test" href="https://{{project.name.toLowerCase()}}.marco-lenschau.de/" target="_blank">{{'Live Test' | translate }}</a>   
-            <a class="d_flex_c github" href="https://github.com/SnowCoder404/{{project.name}}" target="_blank">GitHub</a>   
+            <a class="d_flex_c github" href="https://github.com/MarcoLenschau/{{project.name}}" target="_blank">GitHub</a>  
            </div>
         </div>
     </div>
