@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
@@ -10,10 +10,13 @@ import { Router } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  
-  constructor(private router: Router) {}
+  router = inject(Router);
   
   switchToImprint() {
     this.router.navigate(['/imprint']);   
+  }
+
+  switchToPrivacy() {
+    this.router.navigate(['/privacy']);   
   }
 }
