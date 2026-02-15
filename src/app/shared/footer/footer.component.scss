@@ -34,6 +34,14 @@ footer {
     height: 214px;
     justify-content: space-around;
     align-items: center;
+    >div {
+        justify-content: space-between;;
+        align-items: center;
+        height: 50%;
+        >span {
+            text-align: center;
+        }
+    }
 }
 
 .logos {
@@ -85,4 +93,19 @@ footer {
     .logo-section {
         order: 2;
     }
+}
+
+
+@media(max-width: 400px) {
+    footer {
+        gap: 16px;
+        height: 100%;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 8px;
+        order: 3;
+        padding-bottom: 24px;
+    }       
 }
