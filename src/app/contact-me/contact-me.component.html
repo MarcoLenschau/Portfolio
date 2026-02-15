@@ -16,6 +16,7 @@
                         </div>
                     </div>
                 </div>
+                <section>
                 <div class="d_flex_s_b g_12 responsiv-column">
                     <span class="color-blue headline">{{'Let us work together!' | translate }}</span>
                     <div class="d_flex_column">
@@ -38,7 +39,11 @@
                     <textarea [class.invalid-text]="!message.valid && message.touched && !message.disabled" minlength="4" 
                     #message="ngModel" name="subject" [(ngModel)]="contactData.subject" cols="50" rows="6"
                     (blur)="invalidText('message')" placeholder="  Your message" id="message" required></textarea>
-                </div>
+                </div>                    
+
+
+                </section>
+
                 <div class="d_flex_column privacy-police">
                     <div class="d_flex g_6">
                         <div (click)="checkOrUncheck()" class="checkbox"></div>
