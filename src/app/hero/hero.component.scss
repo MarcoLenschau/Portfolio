@@ -53,10 +53,6 @@ marquee {
     margin: 0 22px;
 }
 
-#hero {
-    height: 86vh !important;
-}
-
 @media (min-width: 1800px) {
     .picture-from-drop{
         background-image: url("/assets/img/drop.svg");        
@@ -110,7 +106,6 @@ marquee {
 
 @media (min-width: 920px) AND (max-width: 1800px) {
     #hero {
-        height: 90vh;
         width: 1920px;
         align-items: flex-end;
     }
