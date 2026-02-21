@@ -2,7 +2,7 @@
 @import "../../styles.scss";
 
 .link-container {
-    height: 84vh;
+    height: 80vh;
     margin: 25px;
 }
 
@@ -106,7 +106,6 @@ marquee {
 
 @media (min-width: 920px) AND (max-width: 1800px) {
     #hero {
-        height: 90vh;
         width: 1920px;
         align-items: flex-end;
     }
